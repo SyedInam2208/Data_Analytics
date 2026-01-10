@@ -5,7 +5,7 @@ Research Questions and Key Performance Indicators (RQ_KPI)
 
 ----
 
-RQ1: Can contextual information improve outlier classification compared to purely statistical methods?
+#RQ1: Can contextual information improve outlier classification compared to purely statistical methods?
 Research Question
 
 Can a context-aware machine learning approach classify outliers into harmful, benign, and strategic categories more effectively than purely statistical methods?
@@ -28,7 +28,7 @@ Quantification of the contribution of contextual features using explainability t
 
 ----
 
-RQ2: How do harmful outliers distort key business KPIs?
+#RQ2: How do harmful outliers distort key business KPIs?
 Research Question
 
 To what extent do harmful outliers distort key business KPIs such as revenue, average order value (AOV), and customer-level metrics?
@@ -53,7 +53,7 @@ Variation in KPI distortion across time periods (e.g., daily or weekly trends).
 
 ----
 
-RQ3: What is the strategic value loss from blanket outlier removal?
+#RQ3: What is the strategic value loss from blanket outlier removal?
 Research Question
 
 How much strategic business value is lost when blanket statistical outlier removal is applied instead of a context-aware removal strategy?
@@ -78,7 +78,7 @@ Analysis of retained strategic revenue across time periods and product categorie
 
 ----
 
-RQ4: Are context-aware outlier models explainable, stable, and aligned with business logic?
+#RQ4: Are context-aware outlier models explainable, stable, and aligned with business logic?
 Research Question
 
 Do context-aware outlier classification models produce explanations that are interpretable, stable across retraining, and aligned with predefined business rules?
