@@ -37,6 +37,7 @@ Data_Analytics/
 │   └── create_tables.sql       # PostgreSQL schema
 ├── tables_figures/             # All generated tables & figures (RQ-wise)
 ├── requirements.txt
+├── RQ_KPI.md
 └── README.md
 
 ```
@@ -87,6 +88,15 @@ Research Question Implementation Mapping
 | RQ2 – KPI distortion analysis               | `rq2_kpi_distortion.py`                                                            |
 | RQ3 – Strategic value preservation          | `rq3_strategic_value.py`                                                           |
 | RQ4 – Explainability & stability validation | `rq4_explainability_validation.py`                                                 |
+
+## Understanding the Research Questions
+
+For a detailed explanation of the research questions, objectives, and key performance indicators (KPIs), please refer to the file:
+
+- **`RQ_KPI.md`**
+
+This document provides the formal definition of all research questions (RQ1–RQ4) and explains how each analytical component of the project is evaluated.
+
 
 All generated tables and figures are saved in the tables_figures/ directory using the naming convention:
 - RQ1_Tb1.xlsx, RQ1_Tb2.xlsx, ...
