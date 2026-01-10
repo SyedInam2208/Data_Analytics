@@ -39,17 +39,17 @@ Harmful outliers caused by data quality issues can significantly bias business K
 
 KPIs
 
-KPI 2-1: KPI Distortion Magnitude
+- KPI 2-1: KPI Distortion Magnitude
 
-Percentage distortion in revenue, AOV, and revenue per customer caused by harmful outliers.
+    - Percentage distortion in revenue, AOV, and revenue per customer caused by harmful outliers.
 
-KPI 2-2: Segment-Level Distortion
+- KPI 2-2: Segment-Level Distortion
 
-KPI distortion analyzed separately for different customer segments (e.g., private vs wholesaler).
+    - KPI distortion analyzed separately for different customer segments (e.g., private vs wholesaler).
 
-KPI 2-3: Temporal Distortion Patterns
+- KPI 2-3: Temporal Distortion Patterns
 
-Variation in KPI distortion across time periods (e.g., daily or weekly trends).
+    - Variation in KPI distortion across time periods (e.g., daily or weekly trends).
 
 ----
 
@@ -64,17 +64,17 @@ Blanket outlier removal may eliminate legitimate high-value transactions, partic
 
 KPIs
 
-KPI 3-1: Strategic Revenue Retention
+- KPI 3-1: Strategic Revenue Retention
 
-Percentage of outlier-associated revenue retained when using context-aware removal compared to blanket removal.
+    - Percentage of outlier-associated revenue retained when using context-aware removal compared to blanket removal.
 
-KPI 3-2: KPI Bias Comparison
+- KPI 3-2: KPI Bias Comparison
 
-Difference in AOV and revenue metrics between blanket and context-aware outlier handling.
+    - Difference in AOV and revenue metrics between blanket and context-aware outlier handling.
 
-KPI 3-3: Temporal and Category Impact
+- KPI 3-3: Temporal and Category Impact
 
-Analysis of retained strategic revenue across time periods and product categories.
+    - Analysis of retained strategic revenue across time periods and product categories.
 
 ----
 
@@ -89,14 +89,14 @@ For real-world adoption, analytical models must be transparent, consistent, and 
 
 KPIs
 
-KPI 4-1: Explanation Consistency
+- KPI 4-1: Explanation Consistency
 
-Stability of top contributing features across multiple model retraining runs, measured using interpretable feature-attribution techniques (e.g., SHAP or permutation-based methods).
+    - Stability of top contributing features across multiple model retraining runs, measured using interpretable feature-attribution techniques (e.g., SHAP or permutation-based methods).
 
-KPI 4-2: Business Rule Alignment Rate
+- KPI 4-2: Business Rule Alignment Rate
 
-Percentage of model predictions that align with predefined business rules for identifying harmful and strategic transactions.
+    - Percentage of model predictions that align with predefined business rules for identifying harmful and strategic transactions.
 
-KPI 4-3: Prediction Stability
+- KPI 4-3: Prediction Stability
 
-Proportion of instances whose predicted class remains unchanged across multiple model retraining runs.
+    - Proportion of instances whose predicted class remains unchanged across multiple model retraining runs.
