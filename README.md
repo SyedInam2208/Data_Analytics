@@ -1,52 +1,91 @@
-# Data_Analytics
+### *** Data_Analytics *** ###
+
 UE_Sem-1_DA_Project
+----
+Project Overview
 
-## How to Run the Code
-Follow these instructions to execute the pipeline manually:
+This project implements a context-aware outlier analytics framework on transactional retail data.
+Instead of treating all statistical outliers as noise, the project distinguishes between:
 
-1. **Install Dependencies:**
-   Run the command: `pip install -r requirements.txt`
+- Harmful outliers – data quality issues that distort KPIs
+- Benign outliers – statistically rare but business-neutral
+- Strategic outliers – rare, high-value transactions that should be preserved
 
-2. **Execute Stage Scripts (Sequential):**
-   - **Pipeline:** `python src/run_data_pipeline.py`
-   - **Ingestion:** `python src/loading.py`
-   - **Cleaning:** `python src/cleaning.py`
+The framework combines:
 
-## Integrated Table Structure (Master DataFrame)
+- Statistical analysis
+- Context-aware machine learning
+- KPI distortion analysis
+- Explainability and stability validation
 
-This document outlines the schema of the integrated table generated after the data cleaning and feature engineering process.
+Data_Analytics/
+│
+├── data/
+│   ├── RAW/                # Original CSV files
+│   └── processed/          # Cleaned & feature-engineered data
+│
+├── src/
+│   ├── cleaning.py
+│   ├── loading.py
+│   ├── run_data_pipeline.py
+│   ├── rq1_prepare_dataset.py
+│   ├── rq1_model_train_eval.py
+│   ├── rq1_context_contribution.py
+│   ├── rq2_kpi_distortion.py
+│   ├── rq3_strategic_value.py
+│   └── rq4_explainability_validation.py
+│
+├── db/
+│   └── create_tables.sql   # PostgreSQL schema
+│
+├── tables_figures/         # All generated tables & figures (RQ-wise)
+│
+├── requirements.txt
+└── README.md
 
-### 1. Core Information
-- **`InvoiceID`**: Unique identifier for each transaction
-- **`date`**: Date of the transaction
-- **`CustomerID`**: Unique identifier for each customer
-- **`customer_type`**: Customer segment (**private** or **wholesaler**)
 
-### 2. Product Details
-- **`product_id`**: Unique identifier for each product
-- **`item`**: Product name
-- **`category`**: Product category
+Integrated Table Structure (Master DataFrame)
 
-### 3. Transaction Metrics
-- **`quantity`**: Number of units purchased
-- **`price`**: Actual transaction price (after discounts)
-- **`product_price`**: Original list price of the product
-- **`line_total`**: Total transaction value (`quantity` × `price`)
+This section describes the integrated dataset created after cleaning and feature engineering.
 
-### 4. Derived Features (Enabled when `add_features=True`)
+1. Core Information
 
-#### Temporal Features
-- **`year`, `month`, `quarter`**: Year, month, and quarter of the transaction
-- **`day_of_week`**: Numeric day of the week (0 = Monday, 6 = Sunday)
-- **`day_name`**: Name of the day of the week
-- **`is_weekend`**: Boolean flag for weekend transactions
-- **`is_peak_season`**: Boolean flag for high-volume season (**Sep–Nov**)
-- **`is_off_season`**: Boolean flag for low-volume season (**Jan–Feb**)
+- invoice_id – Unique identifier for each transaction
 
-#### Pricing Features
-- **`price_vs_product_price`**: Ratio of the transaction price to the list price
-- **`price_discount_pct`**: Applied discount percentage (%)
+- date – Date of the transaction
 
-#### Validation Metrics
-- **`calculated_line_total`**: Re-computed total value (`quantity` × `price`) for verification
-- **`line_total_error`**: Difference between the recorded `line_total` and the `calculated_line_total`
+- customer_id – Unique identifier for each customer
+
+- customer_type – Customer segment (private / wholesaler)
+
+2. Product Details
+
+- product_id – Unique product identifier
+
+- item – Product name
+
+- category – Product category
+
+3. Transaction Metrics
+
+- quantity – Number of units purchased
+
+- price – Transaction price (after discounts)
+
+- product_price – Original list price
+
+- line_total – quantity × price
+
+4. Derived Features
+*** Temporal Features:
+   year, month, quarter
+   day_of_week, day_name
+   is_weekend
+   is_peak_season (Sep–Nov)
+   is_off_season (Jan–Feb)
+
+*** Pricing & Validation Features:
+   price_vs_product_price
+   price_discount_pct
+   calculated_line_total
+   line_total_error
