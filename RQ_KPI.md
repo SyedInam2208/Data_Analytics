@@ -16,15 +16,15 @@ Traditional outlier detection techniques rely on statistical thresholds and ofte
 
 KPIs
 
-KPI 1-1: Classification Performance
+- KPI 1-1: Classification Performance
 
-Precision, recall, and F1-score for each outlier class (harmful, benign, strategic).
+-- Precision, recall, and F1-score for each outlier class (harmful, benign, strategic).
 
-Confusion matrix to analyze misclassification patterns.
+-- Confusion matrix to analyze misclassification patterns.
 
-KPI 1-2: Contextual Feature Contribution
+- KPI 1-2: Contextual Feature Contribution
 
-Quantification of the contribution of contextual features using explainability techniques (e.g., SHAP or feature-importance-based methods) relative to numeric features.
+-- Quantification of the contribution of contextual features using explainability techniques (e.g., SHAP or feature-importance-based methods) relative to numeric features.
 
 ----
 
