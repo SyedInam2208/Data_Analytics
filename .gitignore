@@ -1,25 +1,4 @@
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual Environment
-venv/
-env/
-ENV/
-.venv
-
-# IDE
-.vscode/
-.idea/
-
-# OS
 .DS_Store
-
-# Markdown
-*.md
-!README.md
-!RQ_KPI.md
-
-# ETC
-documents/
+__pycache__/
+*.pyc
+*.pyo

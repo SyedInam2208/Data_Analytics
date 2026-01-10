@@ -1,0 +1,672 @@
+invoice_id,date,customer_id,customer_type,invoice_revenue,total_qty,avg_price,n_items,dominant_category,month,day_of_week,is_weekend,is_peak_season,is_off_season,is_statistical_outlier,is_harmful,is_strategic,is_benign,outlier_class
+10011,2015-01-06,3686,private,2.19,1.0,2.19,1,Dairy,1,1,False,False,True,True,False,False,True,Benign
+10064,2015-04-15,3701,private,4.49,3.0,1.51,2,Bakery & Snacks,4,2,False,False,False,True,False,False,True,Benign
+10154,2015-06-12,3728,private,4.54,2.0,2.27,2,Miscellaneous,6,4,False,False,False,True,False,False,True,Benign
+1016,2014-03-20,1280,private,5.24,3.0,1.705,2,Bakery & Snacks,3,3,False,False,False,True,False,False,True,Benign
+10204,2014-01-12,3739,private,5.32,5.0,1.04,2,Beverages,1,6,True,False,True,True,False,False,True,Benign
+1025,2015-03-06,1283,private,5.05,3.0,1.755,2,Household,3,4,False,False,False,True,False,False,True,Benign
+10278,2014-06-14,3758,private,3.36,2.0,1.68,2,Dairy,6,5,True,False,False,True,False,False,True,Benign
+10406,2015-10-12,3789,private,3.19,2.0,1.595,2,Dairy,10,0,False,True,False,True,False,False,True,Benign
+10648,2014-05-07,3855,private,4.6899999999999995,2.0,2.3449999999999998,2,Miscellaneous,5,2,False,False,False,True,False,False,True,Benign
+10739,2014-01-10,3879,private,1.84,1.0,1.84,1,Dairy,1,4,False,False,True,True,False,False,True,Benign
+10822,2014-02-20,3903,private,4.82,2.0,2.41,2,Produce,2,3,False,False,True,True,False,False,True,Benign
+1083,2014-02-24,1296,private,5.52,4.0,1.4933333333333334,3,Produce,2,0,False,False,True,True,False,False,True,Benign
+10889,2014-03-20,3918,private,5.27,3.0,1.865,2,Household,3,3,False,False,False,True,False,False,True,Benign
+10899,2014-02-02,3921,private,4.84,2.0,2.42,2,Beverages,2,6,True,False,True,True,False,False,True,Benign
+10927,2015-09-26,3928,private,4.529999999999999,3.0,1.68,2,Miscellaneous,9,5,True,True,False,True,False,False,True,Benign
+10940,2014-12-02,3933,private,4.47,4.0,1.2349999999999999,2,Bakery & Snacks,12,1,False,False,False,True,False,False,True,Benign
+10980,2014-01-25,3945,private,4.52,2.0,2.26,2,Produce,1,5,True,False,True,True,False,False,True,Benign
+10986,2014-12-05,3947,private,3.89,3.0,1.405,2,Beverages,12,4,False,False,False,True,False,False,True,Benign
+11219,2015-01-10,4015,private,4.03,2.0,2.015,2,Dairy,1,5,True,False,True,True,False,False,True,Benign
+11284,2014-02-25,4033,private,5.49,2.0,2.745,2,Bakery & Snacks,2,1,False,False,True,True,False,False,True,Benign
+1130,2014-04-13,1310,private,5.47,5.0,1.2349999999999999,2,Bakery & Snacks,4,6,True,False,False,True,False,False,True,Benign
+1131,2014-11-22,1310,private,4.37,2.0,2.185,2,Household,11,5,True,True,False,True,False,False,True,Benign
+11479,2014-08-26,4091,private,4.51,2.0,2.255,2,Dairy,8,1,False,False,False,True,False,False,True,Benign
+11538,2014-10-26,4105,private,5.6,2.0,2.8,2,Miscellaneous,10,6,True,True,False,True,False,False,True,Benign
+11564,2015-11-28,4110,private,5.62,2.0,2.81,2,Produce,11,5,True,True,False,True,False,False,True,Benign
+11633,2014-03-18,4127,private,5.23,2.0,2.615,2,Condiments & Spices,3,1,False,False,False,True,False,False,True,Benign
+11635,2014-04-02,4129,private,3.16,2.0,1.58,2,Bakery & Snacks,4,2,False,False,False,True,False,False,True,Benign
+11667,2014-09-30,4134,private,5.5600000000000005,2.0,2.7800000000000002,2,Beverages,9,1,False,True,False,True,False,False,True,Benign
+11823,2014-09-25,4176,private,3.74,2.0,1.87,2,Dairy,9,3,False,True,False,True,False,False,True,Benign
+11943,2014-04-07,4206,private,5.4799999999999995,4.0,1.5699999999999998,2,Miscellaneous,4,0,False,False,False,True,False,False,True,Benign
+12001,2015-10-16,4219,private,3.3,2.0,1.65,2,Bakery & Snacks,10,4,False,True,False,True,False,False,True,Benign
+12025,2014-10-06,4224,private,4.449999999999999,2.0,2.2249999999999996,2,Produce,10,0,False,True,False,True,False,False,True,Benign
+12067,2014-05-13,4235,private,3.58,2.0,1.79,2,Dairy,5,1,False,False,False,True,False,False,True,Benign
+12100,2014-12-05,4244,private,4.54,3.0,1.4849999999999999,2,Pantry,12,4,False,False,False,True,False,False,True,Benign
+12120,2014-10-25,4250,private,4.55,4.0,1.275,2,Bakery & Snacks,10,5,True,True,False,True,False,False,True,Benign
+12166,2014-03-03,4262,private,5.42,4.0,1.355,2,Household,3,0,False,False,False,True,False,False,True,Benign
+12218,2015-01-22,4273,private,2.91,2.0,1.455,2,Bakery & Snacks,1,3,False,False,True,True,False,False,True,Benign
+12313,2014-08-02,4297,private,5.49,3.0,1.76,2,Dairy,8,5,True,False,False,True,False,False,True,Benign
+1235,2015-11-18,1340,private,4.16,2.0,2.08,2,Bakery & Snacks,11,2,False,True,False,True,False,False,True,Benign
+12484,2014-10-12,4336,private,5.5600000000000005,2.0,2.7800000000000002,2,Household,10,6,True,True,False,True,False,False,True,Benign
+12494,2015-10-11,4338,private,4.23,2.0,2.115,2,Produce,10,6,True,True,False,True,False,False,True,Benign
+12516,2014-04-17,4342,private,2.19,1.0,2.19,1,Dairy,4,3,False,False,False,True,False,False,True,Benign
+12531,2014-02-11,4348,private,5.52,3.0,2.26,2,Bakery & Snacks,2,1,False,False,True,True,False,False,True,Benign
+12555,2014-01-13,4355,private,4.88,2.0,2.44,2,Produce,1,0,False,False,True,True,False,False,True,Benign
+12595,2015-02-20,4365,private,4.38,2.0,2.19,1,Dairy,2,4,False,False,True,True,False,False,True,Benign
+12666,2014-09-06,4387,private,5.36,2.0,2.68,2,Bakery & Snacks,9,5,True,True,False,True,False,False,True,Benign
+12825,2014-03-16,4431,private,4.1899999999999995,3.0,1.595,2,Dairy,3,6,True,False,False,True,False,False,True,Benign
+12844,2014-12-06,4435,private,3.47,2.0,1.735,2,Beverages,12,5,True,False,False,True,False,False,True,Benign
+12898,2014-12-11,4449,private,3.84,3.0,1.42,2,Bakery & Snacks,12,3,False,False,False,True,False,False,True,Benign
+13032,2015-07-20,4487,private,3.51,1.0,3.51,1,Miscellaneous,7,0,False,False,False,True,False,False,True,Benign
+13039,2015-11-19,4489,private,3.39,2.0,1.695,2,Dairy,11,3,False,True,False,True,False,False,True,Benign
+13115,2014-08-22,4508,private,4.02,2.0,2.01,2,Dairy,8,4,False,False,False,True,False,False,True,Benign
+13128,2014-03-12,4510,private,5.03,2.0,2.515,2,Produce,3,2,False,False,False,True,False,False,True,Benign
+13255,2014-06-29,4543,private,3.31,2.0,1.655,2,Dairy,6,6,True,False,False,True,False,False,True,Benign
+13289,2014-07-20,4554,private,3.73,2.0,1.865,2,Dairy,7,6,True,False,False,True,False,False,True,Benign
+13329,2014-01-29,4564,private,3.52,2.0,1.76,2,Dairy,1,2,False,False,True,True,False,False,True,Benign
+13350,2014-08-25,4571,private,4.95,2.0,2.475,2,Bakery & Snacks,8,0,False,False,False,True,False,False,True,Benign
+1338,2015-05-30,1366,private,3.81,2.0,1.905,2,Dairy,5,5,True,False,False,True,False,False,True,Benign
+1340,2014-01-31,1367,private,4.66,2.0,2.33,2,Beverages,1,4,False,False,True,True,False,False,True,Benign
+13407,2014-05-18,4585,private,5.06,4.0,1.3599999999999999,2,Miscellaneous,5,6,True,False,False,True,False,False,True,Benign
+13453,2014-07-17,4597,private,5.13,3.0,1.775,2,Bakery & Snacks,7,3,False,False,False,True,False,False,True,Benign
+13536,2014-05-18,4622,private,4.16,2.0,2.08,2,Bakery & Snacks,5,6,True,False,False,True,False,False,True,Benign
+13538,2014-07-05,4623,private,4.66,3.0,1.415,2,Bakery & Snacks,7,5,True,False,False,True,False,False,True,Benign
+13569,2014-09-24,4629,private,3.52,2.0,1.76,2,Dairy,9,2,False,True,False,True,False,False,True,Benign
+13648,2014-08-17,4650,private,3.66,2.0,1.83,1,Bakery & Snacks,8,6,True,False,False,True,False,False,True,Benign
+13697,2015-11-17,4662,private,5.49,3.0,1.83,1,Bakery & Snacks,11,1,False,True,False,True,False,False,True,Benign
+1381,2015-04-09,1380,private,5.13,3.0,1.65,2,Bakery & Snacks,4,3,False,False,False,True,False,False,True,Benign
+13833,2015-07-01,4693,private,4.66,2.0,2.33,2,Beverages,7,2,False,False,False,True,False,False,True,Benign
+13867,2015-10-25,4698,private,3.37,1.0,3.37,1,Household,10,6,True,True,False,True,False,False,True,Benign
+13998,2015-11-22,4734,private,5.5600000000000005,2.0,2.7800000000000002,2,Produce,11,6,True,True,False,True,False,False,True,Benign
+14024,2014-02-28,4741,private,5.13,2.0,2.565,2,Miscellaneous,2,4,False,False,True,True,False,False,True,Benign
+14106,2014-02-07,4762,private,5.5600000000000005,2.0,2.7800000000000002,2,Household,2,4,False,False,True,True,False,False,True,Benign
+14178,2015-08-16,4782,private,4.83,3.0,1.5,2,Bakery & Snacks,8,6,True,False,False,True,False,False,True,Benign
+14179,2014-04-17,4782,private,3.23,2.0,1.615,2,Bakery & Snacks,4,3,False,False,False,True,False,False,True,Benign
+14202,2014-12-18,4787,private,4.35,3.0,1.545,2,Household,12,3,False,False,False,True,False,False,True,Benign
+14364,2015-05-14,4828,private,2.19,1.0,2.19,1,Dairy,5,3,False,False,False,True,False,False,True,Benign
+14383,2014-08-28,4832,private,4.0200000000000005,2.0,2.0100000000000002,2,Beverages,8,3,False,False,False,True,False,False,True,Benign
+14387,2014-04-27,4833,private,4.02,2.0,2.01,2,Dairy,4,6,True,False,False,True,False,False,True,Benign
+145,2015-05-31,1039,private,3.83,3.0,1.415,2,Bakery & Snacks,5,6,True,False,False,True,False,False,True,Benign
+14580,2014-09-18,4886,private,3.02,1.0,3.02,1,Dairy,9,3,False,True,False,True,False,False,True,Benign
+14605,2014-06-27,4893,private,3.81,2.0,1.905,2,Dairy,6,4,False,False,False,True,False,False,True,Benign
+14650,2015-11-25,4910,private,5.09,2.0,2.545,2,Bakery & Snacks,11,2,False,True,False,True,False,False,True,Benign
+14662,2015-11-29,4914,private,2.19,1.0,2.19,1,Dairy,11,6,True,True,False,True,False,False,True,Benign
+14666,2014-03-18,4915,private,5.0600000000000005,3.0,1.615,2,Bakery & Snacks,3,1,False,False,False,True,False,False,True,Benign
+14854,2015-11-30,4964,private,4.529999999999999,3.0,1.68,2,Miscellaneous,11,0,False,True,False,True,False,False,True,Benign
+14860,2015-08-06,4967,private,4.88,2.0,2.44,2,Produce,8,3,False,False,False,True,False,False,True,Benign
+14886,2014-07-18,4974,private,4.609999999999999,3.0,1.6099999999999999,2,Condiments & Spices,7,4,False,False,False,True,False,False,True,Benign
+14910,2014-03-12,4985,private,4.67,4.0,1.295,2,Produce,3,2,False,False,False,True,False,False,True,Benign
+14949,2015-02-20,4996,private,4.73,2.0,2.365,2,Produce,2,4,False,False,True,True,False,False,True,Benign
+1553,2014-02-04,1427,private,4.35,3.0,1.635,2,Dairy,2,1,False,False,True,True,False,False,True,Benign
+1582,2014-03-27,1434,private,5.43,3.0,1.905,2,Bakery & Snacks,3,3,False,False,False,True,False,False,True,Benign
+1604,2014-07-26,1440,private,5.49,3.0,1.83,1,Bakery & Snacks,7,5,True,False,False,True,False,False,True,Benign
+161,2015-10-25,1044,private,5.2700000000000005,2.0,2.6350000000000002,2,Produce,10,6,True,True,False,True,False,False,True,Benign
+1659,2015-11-20,1456,private,4.54,2.0,2.27,2,Household,11,4,False,True,False,True,False,False,True,Benign
+1772,2015-06-27,1483,private,3.92,2.0,1.96,2,Beverages,6,5,True,False,False,True,False,False,True,Benign
+187,2014-12-26,1051,private,4.65,3.0,1.55,1,Household,12,4,False,False,False,True,False,False,True,Benign
+1873,2014-05-28,1509,private,4.73,2.0,2.365,2,Produce,5,2,False,False,False,True,False,False,True,Benign
+1923,2014-01-30,1522,private,5.04,2.0,2.52,2,Condiments & Spices,1,3,False,False,True,True,False,False,True,Benign
+1964,2014-06-08,1535,private,5.27,3.0,1.865,2,Household,6,6,True,False,False,True,False,False,True,Benign
+2147,2014-07-19,1588,private,4.83,2.0,2.415,2,Produce,7,5,True,False,False,True,False,False,True,Benign
+2248,2015-10-21,1614,private,3.12,2.0,1.56,2,Dairy,10,2,False,True,False,True,False,False,True,Benign
+2373,2014-02-13,1648,private,5.53,3.0,2.225,2,Household,2,3,False,False,True,True,False,False,True,Benign
+2375,2014-10-31,1648,private,5.24,2.0,2.62,2,Produce,10,4,False,True,False,True,False,False,True,Benign
+2490,2014-10-23,1679,private,4.83,4.0,1.415,2,Bakery & Snacks,10,3,False,True,False,True,False,False,True,Benign
+2562,2014-11-05,1700,private,4.24,2.0,2.12,2,Produce,11,2,False,True,False,True,False,False,True,Benign
+2594,2014-12-15,1711,private,4.49,1.0,4.49,1,Dairy,12,0,False,False,False,True,False,False,True,Benign
+2616,2014-12-03,1718,private,5.34,4.0,1.5,2,Miscellaneous,12,2,False,False,False,True,False,False,True,Benign
+2620,2015-09-10,1719,private,5.5600000000000005,2.0,2.7800000000000002,2,Beverages,9,3,False,True,False,True,False,False,True,Benign
+2714,2014-07-19,1741,private,5.32,2.0,2.66,2,Condiments & Spices,7,5,True,False,False,True,False,False,True,Benign
+2734,2014-09-17,1747,private,3.81,2.0,1.905,2,Dairy,9,2,False,True,False,True,False,False,True,Benign
+2829,2014-05-15,1770,private,3.96,2.0,1.98,2,Miscellaneous,5,3,False,False,False,True,False,False,True,Benign
+2937,2014-05-20,1795,private,5.32,3.0,2.075,2,Bakery & Snacks,5,1,False,False,False,True,False,False,True,Benign
+2948,2014-07-31,1797,private,4.27,3.0,1.435,2,Dairy,7,3,False,False,False,True,False,False,True,Benign
+2998,2014-08-16,1811,private,3.9400000000000004,2.0,1.9700000000000002,2,Beverages,8,5,True,False,False,True,False,False,True,Benign
+3100,2015-06-18,1837,private,3.64,2.0,1.82,2,Beverages,6,3,False,False,False,True,False,False,True,Benign
+3149,2014-03-12,1850,private,4.17,2.0,2.085,2,Condiments & Spices,3,2,False,False,False,True,False,False,True,Benign
+3157,2014-09-08,1852,private,3.55,3.0,1.275,2,Bakery & Snacks,9,0,False,True,False,True,False,False,True,Benign
+3267,2014-07-15,1881,private,4.88,2.0,2.44,2,Miscellaneous,7,1,False,False,False,True,False,False,True,Benign
+329,2015-03-28,1093,private,5.32,3.0,2.075,2,Bakery & Snacks,3,5,True,False,False,True,False,False,True,Benign
+3302,2014-11-16,1889,private,3.43,1.0,3.43,1,Produce,11,6,True,True,False,True,False,False,True,Benign
+3536,2014-11-14,1946,private,4.53,2.0,2.265,2,Bakery & Snacks,11,4,False,True,False,True,False,False,True,Benign
+3560,2014-06-23,1951,private,5.05,2.0,2.525,2,Miscellaneous,6,0,False,False,False,True,False,False,True,Benign
+3606,2014-09-23,1966,private,5.13,3.0,1.65,2,Bakery & Snacks,9,1,False,True,False,True,False,False,True,Benign
+3664,2014-07-21,1983,private,4.38,2.0,2.19,1,Dairy,7,0,False,False,False,True,False,False,True,Benign
+3701,2014-02-02,1996,private,3.1399999999999997,2.0,1.5699999999999998,2,Dairy,2,6,True,False,True,True,False,False,True,Benign
+3713,2014-11-10,1998,private,5.4,2.0,2.7,2,Produce,11,0,False,True,False,True,False,False,True,Benign
+385,2014-09-26,1107,private,5.21,3.0,1.69,2,Bakery & Snacks,9,4,False,True,False,True,False,False,True,Benign
+3866,2015-06-18,2039,private,5.61,3.0,2.02,2,Pantry,6,3,False,False,False,True,False,False,True,Benign
+3867,2015-09-22,2039,private,4.69,3.0,1.56,2,Pantry,9,1,False,True,False,True,False,False,True,Benign
+394,2014-10-31,1109,private,5.54,2.0,2.77,2,Condiments & Spices,10,4,False,True,False,True,False,False,True,Benign
+3955,2014-09-07,2059,private,5.27,3.0,1.865,2,Household,9,6,True,True,False,True,False,False,True,Benign
+3957,2014-02-17,2059,private,5.2,2.0,2.6,2,Produce,2,0,False,False,True,True,False,False,True,Benign
+4032,2014-10-13,2076,private,4.66,2.0,2.33,2,Beverages,10,0,False,True,False,True,False,False,True,Benign
+4053,2015-11-23,2082,private,3.36,2.0,1.68,2,Bakery & Snacks,11,0,False,True,False,True,False,False,True,Benign
+4071,2014-08-21,2087,private,2.4299999999999997,2.0,1.2149999999999999,2,Condiments & Spices,8,3,False,False,False,True,False,False,True,Benign
+4097,2014-12-24,2093,private,4.89,2.0,2.445,2,Miscellaneous,12,2,False,False,False,True,False,False,True,Benign
+4234,2014-01-19,2137,private,4.91,3.0,1.72,2,Dairy,1,6,True,False,True,True,False,False,True,Benign
+4306,2014-10-31,2155,private,2.3200000000000003,2.0,1.1600000000000001,2,Dairy,10,4,False,True,False,True,False,False,True,Benign
+4333,2014-06-16,2164,private,4.65,2.0,2.325,2,Dairy,6,0,False,False,False,True,False,False,True,Benign
+4390,2014-09-27,2176,private,3.3,2.0,1.65,2,Bakery & Snacks,9,5,True,True,False,True,False,False,True,Benign
+454,2015-05-12,1125,private,5.51,4.0,1.435,2,Dairy,5,1,False,False,False,True,False,False,True,Benign
+4568,2015-05-22,2229,private,4.51,2.0,2.255,2,Dairy,5,4,False,False,False,True,False,False,True,Benign
+458,2014-11-02,1126,private,3.8,2.0,1.9,2,Dairy,11,6,True,True,False,True,False,False,True,Benign
+4607,2014-04-22,2236,private,1.55,1.0,1.55,1,Household,4,1,False,False,False,True,False,False,True,Benign
+4656,2015-10-15,2250,private,5.43,3.0,1.905,2,Bakery & Snacks,10,3,False,True,False,True,False,False,True,Benign
+4739,2015-11-20,2271,private,5.62,2.0,2.81,2,Produce,11,4,False,True,False,True,False,False,True,Benign
+4826,2014-01-14,2294,private,4.16,2.0,2.08,2,Dairy,1,1,False,False,True,True,False,False,True,Benign
+4992,2014-12-22,2341,private,5.21,3.0,1.69,2,Bakery & Snacks,12,0,False,False,False,True,False,False,True,Benign
+504,2014-07-07,1138,private,5.1,2.0,2.55,2,Produce,7,0,False,False,False,True,False,False,True,Benign
+5220,2015-12-19,2401,private,5.59,3.0,2.255,2,Produce,12,5,True,False,False,True,False,False,True,Benign
+5295,2014-11-11,2425,private,4.8100000000000005,2.0,2.4050000000000002,2,Bakery & Snacks,11,1,False,True,False,True,False,False,True,Benign
+5320,2014-02-28,2431,private,2.19,1.0,2.19,1,Dairy,2,4,False,False,True,True,False,False,True,Benign
+536387,2014-12-01,16029,wholesaler,3193.92,1440.0,2.652,5,Party & Festive,12,0,False,False,False,True,False,True,False,Strategic
+536477,2014-12-01,16210,wholesaler,2474.7400000000002,1070.0,2.5885714285714285,14,Stationery & Craft,12,0,False,False,False,True,False,True,False,Strategic
+536521,2014-12-01,12748,wholesaler,4.95,1.0,4.95,1,"Health, Beauty & Personal Care",12,0,False,False,False,True,False,False,False,Normal
+536568,2014-12-01,16048,private,5.04,12.0,0.42,1,Kitchen & Dining,12,0,False,False,False,True,False,False,True,Benign
+536576,2014-12-01,13777,wholesaler,2558.42,1122.0,2.30625,16,Home Decor,12,0,False,False,False,True,False,True,False,Strategic
+536641,2014-12-02,12748,wholesaler,4.25,1.0,4.25,1,Seasonal,12,1,False,False,False,True,False,False,False,Normal
+536783,2014-12-02,15061,wholesaler,4076.48,2909.0,1.7515789473684211,38,Home Decor,12,1,False,False,False,True,False,True,False,Strategic
+536785,2014-12-02,15061,wholesaler,2730.96,1008.0,2.935,6,Kitchen & Dining,12,1,False,False,False,True,False,True,False,Strategic
+537235,2014-12-06,17381,wholesaler,2567.6400000000003,1464.0,2.526,5,Stationery & Craft,12,5,True,False,False,True,False,True,False,Strategic
+537657,2014-12-07,18102,wholesaler,9639.12,2790.0,7.1240000000000006,5,Stationery & Craft,12,6,True,False,False,True,False,True,False,Strategic
+537659,2014-12-07,18102,wholesaler,15885.49,3689.0,13.207777777777778,9,Stationery & Craft,12,6,True,False,False,True,False,True,False,Strategic
+537793,2014-12-08,15032,wholesaler,2746.75,1655.0,1.7982758620689654,27,Apparel & Accessories,12,0,False,False,False,True,False,True,False,Strategic
+537852,2014-12-08,17340,wholesaler,2671.27,1665.0,2.562790697674419,86,Home Decor,12,0,False,False,False,True,False,True,False,Strategic
+537899,2014-12-09,12755,wholesaler,3794.4,1488.0,2.55,1,Kitchen & Dining,12,1,False,False,False,True,False,True,False,Strategic
+538191,2014-12-10,15061,wholesaler,5375.28,1559.0,3.218125,16,Kitchen & Dining,12,2,False,False,False,True,False,True,False,Strategic
+538194,2014-12-10,17790,private,0.95,1.0,0.95,1,Apparel & Accessories,12,2,False,False,False,True,False,False,True,Benign
+538288,2014-12-10,12748,wholesaler,1.9,2.0,0.95,1,Apparel & Accessories,12,2,False,False,False,True,False,False,False,Normal
+538353,2014-12-10,13798,wholesaler,3762.66,2420.0,2.244736842105263,37,Kitchen & Dining,12,2,False,False,False,True,False,True,False,Strategic
+538397,2014-12-12,12753,wholesaler,3590.59,2409.0,1.9158333333333335,48,Toys & Games,12,4,False,False,False,True,False,True,False,Strategic
+538565,2014-12-13,13069,wholesaler,1.9,2.0,0.95,1,Apparel & Accessories,12,5,True,False,False,True,False,False,False,Normal
+538667,2014-12-13,12748,wholesaler,1.9,2.0,0.95,1,Apparel & Accessories,12,5,True,False,False,True,False,False,False,Normal
+538669,2014-12-13,12748,wholesaler,0.95,1.0,0.95,1,Apparel & Accessories,12,5,True,False,False,True,False,False,False,Normal
+538827,2014-12-14,14298,wholesaler,2586.36,2532.0,1.5153409090909091,88,Home Decor,12,6,True,False,False,True,False,True,False,Strategic
+538991,2014-12-15,17511,wholesaler,3240.4,3944.0,1.6117777777777778,45,Home Decor,12,0,False,False,False,True,False,True,False,Strategic
+538998,2014-12-15,15061,wholesaler,2605.88,1101.0,2.5526666666666666,15,Kitchen & Dining,12,0,False,False,False,True,False,True,False,Strategic
+539056,2014-12-15,16725,private,1.45,1.0,1.45,1,Administrative,12,0,False,False,False,True,False,False,True,Benign
+5391,2014-09-24,2446,private,3.19,2.0,1.595,2,Dairy,9,2,False,True,False,True,False,False,True,Benign
+539101,2014-12-16,16029,wholesaler,6930.0,4800.0,2.0045454545454544,11,Home Decor,12,1,False,False,False,True,False,True,False,Strategic
+539113,2014-12-16,12494,private,4.949999999999999,3.0,1.65,1,Toys & Games,12,1,False,False,False,True,False,False,True,Benign
+539218,2014-12-16,15574,private,3.75,1.0,3.75,1,Stationery & Craft,12,1,False,False,False,True,False,False,True,Benign
+539288,2014-12-16,17857,wholesaler,5.5,10.0,0.55,1,Stationery & Craft,12,1,False,False,False,True,False,False,False,Normal
+539338,2014-12-17,17404,wholesaler,2646.3,3714.0,1.4948000000000001,25,Toys & Games,12,2,False,False,False,True,False,True,False,Strategic
+539645,2014-12-20,17230,wholesaler,0.95,1.0,0.95,1,Apparel & Accessories,12,5,True,False,False,True,False,False,False,Normal
+539731,2014-12-21,14646,wholesaler,8520.92,6668.0,1.8242592592592592,54,Kitchen & Dining,12,6,True,False,False,True,False,True,False,Strategic
+540160,2015-01-05,15769,wholesaler,2574.48,1032.0,2.876666666666667,3,Kitchen & Dining,1,0,False,False,True,True,False,True,False,Strategic
+540176,2015-01-05,17511,wholesaler,3862.14,1914.0,3.268529411764706,34,Kitchen & Dining,1,0,False,False,True,True,False,True,False,Strategic
+540267,2015-01-06,12415,wholesaler,7011.38,4662.0,1.871304347826087,46,Kitchen & Dining,1,1,False,False,True,True,False,True,False,Strategic
+540277,2015-01-06,14258,wholesaler,3120.2200000000003,1798.0,3.376774193548387,31,Home Decor,1,1,False,False,True,True,False,True,False,Strategic
+540372,2015-01-06,13081,wholesaler,3527.64,2650.0,2.3433333333333333,171,Kitchen & Dining,1,1,False,False,True,True,False,True,False,Strategic
+5404,2015-12-29,2448,private,5.6,2.0,2.8,2,Bakery & Snacks,12,1,False,False,False,True,False,False,True,Benign
+540478,2015-01-07,15769,wholesaler,2970.0,1800.0,1.65,8,Apparel & Accessories,1,2,False,False,True,True,False,True,False,Strategic
+540689,2015-01-11,17450,wholesaler,12797.52,4510.0,2.9050000000000002,4,Home Decor,1,6,True,False,True,True,False,True,False,Strategic
+540698,2015-01-11,17450,wholesaler,4314.02,858.0,4.152608695652174,23,Party & Festive,1,6,True,False,True,True,False,True,False,Strategic
+540785,2015-01-11,12557,wholesaler,3417.1200000000003,1008.0,3.39,4,Kitchen & Dining,1,6,True,False,True,True,False,True,False,Strategic
+540815,2015-01-11,15749,wholesaler,15160.900000000001,7044.0,2.1666666666666665,3,Home Decor,1,6,True,False,True,True,False,True,False,Strategic
+540818,2015-01-11,15749,wholesaler,7837.5,1970.0,4.65,2,Kitchen & Dining,1,6,True,False,True,True,False,True,False,Strategic
+540939,2015-01-12,15061,wholesaler,2.46,2.0,1.23,2,Apparel & Accessories,1,0,False,False,True,True,False,False,False,Normal
+540945,2015-01-12,16554,private,0.85,1.0,0.85,1,Party & Festive,1,0,False,False,True,True,False,False,True,Benign
+541206,2015-01-14,14646,wholesaler,10389.06,8210.0,1.589620253164557,79,Kitchen & Dining,1,2,False,False,True,True,False,True,False,Strategic
+541220,2015-01-14,14156,wholesaler,16774.72,6198.0,3.1265853658536584,41,Kitchen & Dining,1,2,False,False,True,True,False,True,False,Strategic
+541236,2015-01-14,17961,private,3.35,1.0,3.35,1,"Health, Beauty & Personal Care",1,2,False,False,True,True,False,False,True,Benign
+541255,2015-01-16,17841,wholesaler,4.25,1.0,4.25,1,Kitchen & Dining,1,4,False,False,True,True,False,False,False,Normal
+541431,2015-01-18,12346,wholesaler,77183.6,74215.0,1.04,1,Kitchen & Dining,1,6,True,False,True,True,True,True,False,Harmful
+541518,2015-01-19,12451,wholesaler,2919.5099999999998,2334.0,2.2398019801980196,101,Kitchen & Dining,1,0,False,False,True,True,False,True,False,Strategic
+541570,2015-01-19,14646,wholesaler,7722.04,6072.0,1.7206060606060607,33,Toys & Games,1,0,False,False,True,True,False,True,False,Strategic
+541670,2015-01-20,14911,wholesaler,2756.84,1332.0,3.1595238095238094,21,Kitchen & Dining,1,1,False,False,True,True,False,True,False,Strategic
+541711,2015-01-21,14646,wholesaler,8060.3,5730.0,2.2264150943396226,106,Kitchen & Dining,1,2,False,False,True,True,False,True,False,Strategic
+541789,2015-01-21,14088,wholesaler,7544.91,1927.0,7.311397849462366,93,Home Decor,1,2,False,False,True,True,False,True,False,Strategic
+541840,2015-01-23,15059,private,2.95,1.0,2.95,1,Kitchen & Dining,1,4,False,False,True,True,False,False,True,Benign
+541932,2015-01-24,14439,private,2661.24,526.0,6.4809375,32,Kitchen & Dining,1,5,True,False,True,True,False,True,False,Strategic
+542428,2015-01-28,17404,wholesaler,2938.7599999999998,2804.0,2.4699999999999998,21,Stationery & Craft,1,2,False,False,True,True,False,True,False,Strategic
+542629,2015-01-31,12731,wholesaler,3174.4300000000003,1617.0,2.6032608695652173,46,Kitchen & Dining,1,5,True,False,True,True,False,True,False,Strategic
+542736,2015-01-31,14744,private,0.55,1.0,0.55,1,Toys & Games,1,5,True,False,True,True,False,False,True,Benign
+542746,2015-01-31,15881,private,1.9,2.0,0.95,1,Apparel & Accessories,1,5,True,False,True,True,False,False,True,Benign
+542759,2015-01-31,15881,private,4.95,1.0,4.95,1,Kitchen & Dining,1,5,True,False,True,True,False,False,True,Benign
+542789,2015-02-01,17511,wholesaler,4446.88,2945.0,1.8206896551724137,58,Kitchen & Dining,2,6,True,False,True,True,False,True,False,Strategic
+542800,2015-02-01,14606,wholesaler,3.67,2.0,1.835,2,Kitchen & Dining,2,6,True,False,True,True,False,False,False,Normal
+542891,2015-02-01,16705,wholesaler,2489.11,1184.0,4.033488372093023,43,Kitchen & Dining,2,6,True,False,True,True,False,True,False,Strategic
+543099,2015-02-03,16684,wholesaler,6549.12,5880.0,2.0905882352941174,34,Kitchen & Dining,2,1,False,False,True,True,False,True,False,Strategic
+543378,2015-02-07,18102,wholesaler,4379.76,1008.0,4.345,2,Stationery & Craft,2,5,True,False,True,True,False,True,False,Strategic
+543379,2015-02-07,18102,wholesaler,6155.72,1420.0,4.33,4,Stationery & Craft,2,5,True,False,True,True,False,True,False,Strategic
+543518,2015-02-09,12753,wholesaler,5735.24,2962.0,2.40875,48,Party & Festive,2,0,False,False,True,True,False,True,False,Strategic
+543599,2015-02-10,17560,private,0.0,16.0,0.0,1,Kitchen & Dining,2,1,False,False,True,True,True,False,False,Harmful
+543788,2015-02-11,15061,wholesaler,2.42,2.0,1.21,2,Apparel & Accessories,2,2,False,False,True,True,False,False,False,Normal
+543829,2015-02-14,12939,wholesaler,3376.08,1536.0,2.0020000000000002,15,Stationery & Craft,2,5,True,False,True,True,False,True,False,Strategic
+543831,2015-02-14,15769,wholesaler,3257.4,1948.0,1.7399999999999998,10,Apparel & Accessories,2,5,True,False,True,True,False,True,False,Strategic
+543986,2015-02-15,16738,private,3.75,3.0,1.25,1,Home Decor,2,6,True,False,True,True,False,False,True,Benign
+543989,2015-02-15,12415,wholesaler,14022.92,8384.0,2.778695652173913,69,Kitchen & Dining,2,6,True,False,True,True,False,True,False,Strategic
+544075,2015-02-15,14156,wholesaler,3506.2400000000002,1932.0,3.667391304347826,23,Home Decor,2,6,True,False,True,True,False,True,False,Strategic
+544392,2015-02-18,14680,wholesaler,2807.31,1223.0,2.3095454545454546,22,Kitchen & Dining,2,2,False,False,True,True,False,True,False,Strategic
+544430,2015-02-18,16306,private,5.1,2.0,2.55,1,Kitchen & Dining,2,2,False,False,True,True,False,False,True,Benign
+544479,2015-02-21,14646,wholesaler,11956.1,8174.0,1.9655263157894736,76,Kitchen & Dining,2,5,True,False,True,True,False,True,False,Strategic
+544480,2015-02-21,14646,wholesaler,6323.38,4034.0,2.8902325581395347,43,Kitchen & Dining,2,5,True,False,True,True,False,True,False,Strategic
+544612,2015-02-22,18087,wholesaler,3202.9199999999996,3906.0,0.82,1,Home Decor,2,6,True,False,True,True,False,True,False,Strategic
+544667,2015-02-22,17511,wholesaler,3336.76,2874.0,1.924705882352941,34,Toys & Games,2,6,True,False,True,True,False,True,False,Strategic
+544672,2015-02-22,14646,wholesaler,3211.7,2940.0,1.4227272727272728,44,Kitchen & Dining,2,6,True,False,True,True,False,True,False,Strategic
+544824,2015-02-24,17139,wholesaler,2639.38,894.0,6.049770992366412,131,Kitchen & Dining,2,1,False,False,True,True,False,True,False,Strategic
+545227,2015-03-01,12428,wholesaler,2474.62,1273.0,3.106734693877551,98,Kitchen & Dining,3,6,True,False,False,True,False,True,False,Strategic
+545320,2015-03-01,14156,wholesaler,2541.15,669.0,4.166666666666667,6,"Health, Beauty & Personal Care",3,6,True,False,False,True,False,True,False,Strategic
+545331,2015-03-01,17961,private,2.5,2.0,1.25,1,Garden & Outdoor,3,6,True,False,False,True,False,False,True,Benign
+545475,2015-03-03,12415,wholesaler,16726.84,10272.0,3.1435365853658532,82,Kitchen & Dining,3,1,False,False,False,True,True,True,False,Harmful
+545582,2015-03-04,13694,wholesaler,3547.34,1976.0,1.9173913043478261,23,Kitchen & Dining,3,2,False,False,False,True,False,True,False,Strategic
+545865,2015-03-07,15769,wholesaler,2597.4,1548.0,1.7625,8,Apparel & Accessories,3,5,True,False,False,True,False,True,False,Strategic
+545914,2015-03-08,13340,wholesaler,3678.0299999999997,1605.0,3.268627450980392,51,Kitchen & Dining,3,6,True,False,False,True,False,True,False,Strategic
+546160,2015-03-10,15838,wholesaler,3277.24,1844.0,1.841875,32,Toys & Games,3,1,False,False,False,True,False,True,False,Strategic
+546212,2015-03-10,14156,wholesaler,3500.5,2826.0,2.5518518518518523,27,Kitchen & Dining,3,1,False,False,False,True,False,True,False,Strategic
+546279,2015-03-10,17841,wholesaler,4.25,1.0,4.25,1,Apparel & Accessories,3,1,False,False,False,True,False,False,False,Normal
+546413,2015-03-11,17961,private,3.0999999999999996,2.0,1.5499999999999998,2,"Health, Beauty & Personal Care",3,2,False,False,False,True,False,False,True,Benign
+546438,2015-03-14,15125,wholesaler,3840.88,2224.0,4.052894736842105,38,Kitchen & Dining,3,5,True,False,False,True,False,True,False,Strategic
+546530,2015-03-14,17404,wholesaler,4400.28,5156.0,1.4651851851851854,27,Kitchen & Dining,3,5,True,False,False,True,False,True,False,Strategic
+546657,2015-03-15,17816,private,5.1,6.0,0.85,1,Kitchen & Dining,3,6,True,False,False,True,False,False,True,Benign
+546739,2015-03-16,17511,wholesaler,3018.34,2374.0,2.3392857142857144,42,Kitchen & Dining,3,0,False,False,False,True,False,True,False,Strategic
+546780,2015-03-17,12435,wholesaler,3978.9900000000002,879.0,6.4321052631578945,19,Toys & Games,3,1,False,False,False,True,False,True,False,Strategic
+546789,2015-03-17,15769,wholesaler,10065.0,6100.0,1.65,9,Apparel & Accessories,3,1,False,False,False,True,False,True,False,Strategic
+546992,2015-03-18,16684,wholesaler,4666.4400000000005,3004.0,2.7624999999999997,16,Kitchen & Dining,3,2,False,False,False,True,False,True,False,Strategic
+547196,2015-03-21,12637,wholesaler,4.63,5.0,1.0525,4,Kitchen & Dining,3,5,True,False,False,True,False,False,False,Normal
+547362,2015-03-22,13694,wholesaler,3221.88,4686.0,1.51,39,Kitchen & Dining,3,6,True,False,False,True,False,True,False,Strategic
+547708,2015-03-24,17450,wholesaler,11343.199999999999,4168.0,3.269230769230769,13,Kitchen & Dining,3,1,False,False,False,True,False,True,False,Strategic
+547812,2015-03-25,18102,wholesaler,5513.32,1336.0,4.3275,4,Stationery & Craft,3,2,False,False,False,True,False,True,False,Strategic
+547832,2015-03-25,17511,wholesaler,3962.06,2379.0,1.9968181818181818,22,Apparel & Accessories,3,2,False,False,False,True,False,True,False,Strategic
+547970,2015-03-28,17238,wholesaler,4.95,1.0,4.95,1,Kitchen & Dining,3,5,True,False,False,True,False,False,False,Normal
+548010,2015-03-29,14646,wholesaler,2527.94,1070.0,4.780666666666666,15,Toys & Games,3,6,True,False,False,True,False,True,False,Strategic
+548011,2015-03-29,14646,wholesaler,15719.56,11116.0,2.257752808988764,89,Toys & Games,3,6,True,False,False,True,True,True,False,Harmful
+548496,2015-03-31,12678,wholesaler,3243.13,2271.0,2.205714285714286,35,"Health, Beauty & Personal Care",3,1,False,False,False,True,False,True,False,Strategic
+548506,2015-03-31,18037,private,3.9,2.0,1.95,2,Kitchen & Dining,3,1,False,False,False,True,False,False,True,Benign
+548813,2015-04-04,12744,wholesaler,4037.77,4.0,1009.4425,1,Administrative,4,5,True,False,False,True,False,True,False,Strategic
+548993,2015-04-05,12753,wholesaler,3599.38,1626.0,2.5671874999999997,32,Kitchen & Dining,4,6,True,False,False,True,False,True,False,Strategic
+549027,2015-04-05,17857,wholesaler,5424.0,1600.0,3.39,4,Home Decor,4,6,True,False,False,True,False,True,False,Strategic
+549669,2015-04-11,13113,wholesaler,2.55,3.0,0.85,1,Kitchen & Dining,4,5,True,False,False,True,False,False,False,Normal
+549746,2015-04-12,15251,wholesaler,2846.02,1918.0,3.890333333333333,30,Kitchen & Dining,4,6,True,False,False,True,False,True,False,Strategic
+549841,2015-04-12,15189,wholesaler,3.3,2.0,1.65,1,"Health, Beauty & Personal Care",4,6,True,False,False,True,False,False,False,Normal
+549927,2015-04-13,16684,wholesaler,3694.36,3300.0,1.9152380952380952,21,Kitchen & Dining,4,0,False,False,False,True,False,True,False,Strategic
+550299,2015-04-15,17389,wholesaler,2945.5,732.0,5.915217391304348,23,Kitchen & Dining,4,2,False,False,False,True,False,True,False,Strategic
+550337,2015-04-17,18037,private,2.1,1.0,2.1,1,Toys & Games,4,4,False,False,False,True,False,False,True,Benign
+550344,2015-04-18,12754,wholesaler,2949.12,6432.0,0.6614285714285714,14,Toys & Games,4,5,True,False,False,True,False,True,False,Strategic
+550461,2015-04-18,15749,wholesaler,21535.9,9014.0,2.928,5,Kitchen & Dining,4,5,True,False,False,True,False,True,False,Strategic
+550710,2015-04-20,17450,wholesaler,3108.64,1736.0,2.2622222222222224,9,Garden & Outdoor,4,0,False,False,False,True,False,True,False,Strategic
+551060,2015-04-26,16356,private,2.1,1.0,2.1,1,Home Decor,4,6,True,False,False,True,False,False,True,Benign
+551338,2015-04-27,15581,private,5.11,3.0,1.5150000000000001,2,Apparel & Accessories,4,0,False,False,False,True,False,False,True,Benign
+551351,2015-04-28,14298,wholesaler,4390.56,4476.0,1.39125,127,Home Decor,4,1,False,False,False,True,False,True,False,Strategic
+551530,2015-05-01,12748,wholesaler,2.1,1.0,2.1,1,Home Decor,5,4,False,False,False,True,False,False,False,Normal
+551697,2015-05-03,16029,wholesaler,8142.75,1.0,8142.75,1,Administrative,5,6,True,False,False,True,False,True,False,Strategic
+551747,2015-05-04,14298,wholesaler,2788.48,4720.0,1.0356140350877192,57,Home Decor,5,0,False,False,False,True,False,True,False,Strategic
+551809,2015-05-04,17511,wholesaler,3566.1400000000003,1498.0,3.5339285714285715,28,Party & Festive,5,0,False,False,False,True,False,True,False,Strategic
+552038,2015-05-06,14156,wholesaler,3869.18,1694.0,3.7685000000000004,20,Kitchen & Dining,5,2,False,False,False,True,False,True,False,Strategic
+552039,2015-05-06,13081,wholesaler,4655.85,3253.0,2.3030113636363634,176,Kitchen & Dining,5,2,False,False,False,True,False,True,False,Strategic
+552250,2015-05-06,12748,wholesaler,3.3,2.0,1.65,2,Apparel & Accessories,5,2,False,False,False,True,False,False,False,Normal
+552289,2015-05-08,17869,private,5.55,5.0,0.9,2,Kitchen & Dining,5,4,False,False,False,True,False,False,True,Benign
+552572,2015-05-10,14680,wholesaler,2944.7,1558.0,2.2628571428571425,21,Apparel & Accessories,5,6,True,False,False,True,False,True,False,Strategic
+552574,2015-05-10,15311,wholesaler,2764.29,2023.0,2.2911363636363635,44,Apparel & Accessories,5,6,True,False,False,True,False,True,False,Strategic
+552868,2015-05-12,15513,wholesaler,5.04,12.0,0.42,1,Toys & Games,5,1,False,False,False,True,False,False,False,Normal
+552883,2015-05-12,14646,wholesaler,14415.74,12266.0,2.3729347826086955,92,Kitchen & Dining,5,1,False,False,False,True,True,True,False,Harmful
+552888,2015-05-12,15061,wholesaler,2613.36,1264.0,2.756923076923077,13,Kitchen & Dining,5,1,False,False,False,True,False,True,False,Strategic
+552957,2015-05-12,17404,wholesaler,2557.88,2794.0,2.745,16,Kitchen & Dining,5,1,False,False,False,True,False,True,False,Strategic
+552978,2015-05-12,12590,wholesaler,9341.26,4282.0,2.8988059701492537,67,Kitchen & Dining,5,1,False,False,False,True,False,True,False,Strategic
+553368,2015-05-16,18102,wholesaler,8895.66,1787.0,5.241176470588235,17,Home Decor,5,5,True,False,False,True,False,True,False,Strategic
+553470,2015-05-17,18102,wholesaler,5410.0599999999995,1325.0,4.3500000000000005,11,Home Decor,5,6,True,False,False,True,False,True,False,Strategic
+553471,2015-05-17,18102,wholesaler,2462.26,330.0,8.273333333333333,9,Kitchen & Dining,5,6,True,False,False,True,False,True,False,Strategic
+553540,2015-05-17,17511,wholesaler,2649.52,2316.0,2.004042553191489,47,Kitchen & Dining,5,6,True,False,False,True,False,True,False,Strategic
+553546,2015-05-17,12415,wholesaler,11924.800000000001,8268.0,2.702054794520548,73,Stationery & Craft,5,6,True,False,False,True,False,True,False,Strategic
+553573,2015-05-18,16446,wholesaler,2.9,2.0,1.45,2,"Health, Beauty & Personal Care",5,0,False,False,False,True,False,False,False,Normal
+553607,2015-05-18,16684,wholesaler,5176.12,4084.0,2.4212000000000002,25,Kitchen & Dining,5,0,False,False,False,True,False,True,False,Strategic
+554052,2015-05-20,18048,private,3.8,4.0,0.95,1,Apparel & Accessories,5,2,False,False,False,True,False,False,True,Benign
+554098,2015-05-22,14769,wholesaler,2454.11,1562.0,2.9882421875,249,Kitchen & Dining,5,4,False,False,False,True,False,True,False,Strategic
+554207,2015-05-23,14573,private,1.95,1.0,1.95,1,Toys & Games,5,5,True,False,False,True,False,False,True,Benign
+554272,2015-05-23,12901,wholesaler,2843.6,3863.0,1.2816666666666665,6,Kitchen & Dining,5,5,True,False,False,True,False,True,False,Strategic
+554358,2015-05-24,17450,wholesaler,2825.4,828.0,3.4,2,Stationery & Craft,5,6,True,False,False,True,False,True,False,Strategic
+554366,2015-05-24,17450,wholesaler,9468.48,3084.0,3.1275,4,Kitchen & Dining,5,6,True,False,False,True,False,True,False,Strategic
+554495,2015-05-24,17961,private,3.75,1.0,3.75,1,Apparel & Accessories,5,6,True,False,False,True,False,False,True,Benign
+554827,2015-05-26,14646,wholesaler,8980.880000000001,4664.0,2.8276,50,Kitchen & Dining,5,1,False,False,False,True,False,True,False,Strategic
+554845,2015-05-26,17450,wholesaler,5518.68,2140.0,2.12375,8,Home Decor,5,1,False,False,False,True,False,True,False,Strategic
+554868,2015-05-27,13135,wholesaler,3096.0,4300.0,0.72,1,Home Decor,5,2,False,False,False,True,False,True,False,Strategic
+555164,2015-06-01,14646,wholesaler,3623.2,1836.0,3.4076923076923076,13,Kitchen & Dining,6,0,False,False,False,True,False,True,False,Strategic
+555284,2015-06-02,14298,wholesaler,3056.7200000000003,3280.0,1.5845714285714285,105,Kitchen & Dining,6,1,False,False,False,True,False,True,False,Strategic
+555400,2015-06-02,14088,wholesaler,5913.9,1330.0,7.300000000000001,68,Kitchen & Dining,6,1,False,False,False,True,False,True,False,Strategic
+555855,2015-06-07,15311,wholesaler,2516.19,1911.0,2.4904347826086957,46,Apparel & Accessories,6,6,True,False,False,True,False,True,False,Strategic
+555920,2015-06-07,18102,wholesaler,10999.52,2274.0,5.238333333333333,12,Home Decor,6,6,True,False,False,True,False,True,False,Strategic
+556099,2015-06-08,13162,wholesaler,3.75,1.0,3.75,1,Home Decor,6,0,False,False,False,True,False,False,False,Normal
+556255,2015-06-09,18102,wholesaler,16488.0,3600.0,4.58,12,Home Decor,6,1,False,False,False,True,False,True,False,Strategic
+556267,2015-06-09,13694,wholesaler,3027.31,9811.0,1.0203225806451615,31,Apparel & Accessories,6,1,False,False,False,True,False,True,False,Strategic
+556415,2015-06-10,12409,wholesaler,6207.08,3142.0,3.71109375,64,Kitchen & Dining,6,2,False,False,False,True,False,True,False,Strategic
+556444,2015-06-10,15098,private,38970.0,60.0,649.5,1,Garden & Outdoor,6,2,False,False,False,True,False,True,False,Strategic
+556456,2015-06-10,12748,wholesaler,3.75,1.0,3.75,1,Home Decor,6,2,False,False,False,True,False,False,False,Normal
+556519,2015-06-13,16794,private,3.3200000000000003,3.0,1.335,2,Administrative,6,5,True,False,False,True,False,False,True,Benign
+556723,2015-06-14,18102,wholesaler,3060.4,756.0,4.058571428571429,7,Home Decor,6,6,True,False,False,True,False,True,False,Strategic
+556725,2015-06-14,18102,wholesaler,2496.0,200.0,12.48,1,Home Decor,6,6,True,False,False,True,False,True,False,Strategic
+556726,2015-06-14,18102,wholesaler,8915.52,2096.0,4.527777777777778,9,Home Decor,6,6,True,False,False,True,False,True,False,Strategic
+556845,2015-06-15,17511,wholesaler,4415.4400000000005,3007.0,2.1836363636363636,55,Kitchen & Dining,6,0,False,False,False,True,False,True,False,Strategic
+556917,2015-06-15,12415,wholesaler,22775.93,15049.0,2.054855072463768,137,Kitchen & Dining,6,0,False,False,False,True,True,True,False,Harmful
+556927,2015-06-15,14156,wholesaler,3876.86,2642.0,2.2622222222222224,26,Kitchen & Dining,6,0,False,False,False,True,False,True,False,Strategic
+557125,2015-06-16,17450,wholesaler,5405.48,3104.0,2.5363636363636366,11,Kitchen & Dining,6,1,False,False,False,True,False,True,False,Strategic
+557263,2015-06-19,14646,wholesaler,5683.06,4718.0,1.7276923076923079,52,Kitchen & Dining,6,4,False,False,False,True,False,True,False,Strategic
+557472,2015-06-20,12432,wholesaler,2862.06,1090.0,5.168709677419355,62,Toys & Games,6,5,True,False,False,True,False,True,False,Strategic
+557485,2015-06-20,15769,wholesaler,2876.0,1600.0,1.8,6,Apparel & Accessories,6,5,True,False,False,True,False,True,False,Strategic
+557513,2015-06-20,15700,private,3.9,2.0,1.95,1,Apparel & Accessories,6,5,True,False,False,True,False,False,True,Benign
+557783,2015-06-22,12748,wholesaler,4.94,4.0,1.5166666666666666,3,Kitchen & Dining,6,0,False,False,False,True,False,False,False,Normal
+557880,2015-06-23,14911,wholesaler,1.45,1.0,1.45,1,Kitchen & Dining,6,1,False,False,False,True,False,False,False,Normal
+558262,2015-06-28,14646,wholesaler,10174.94,8998.0,1.8444444444444446,72,Apparel & Accessories,6,6,True,False,False,True,False,True,False,Strategic
+558311,2015-06-28,14646,wholesaler,2739.92,1588.0,2.752,20,Kitchen & Dining,6,6,True,False,False,True,False,True,False,Strategic
+558417,2015-06-29,14156,wholesaler,2822.7400000000002,2086.0,2.052,24,Kitchen & Dining,6,0,False,False,False,True,False,True,False,Strategic
+558526,2015-06-30,17949,wholesaler,13355.4,4332.0,2.961111111111111,8,Kitchen & Dining,6,1,False,False,False,True,False,True,False,Strategic
+558527,2015-06-30,12748,wholesaler,1.65,1.0,1.65,1,Garden & Outdoor,6,1,False,False,False,True,False,False,False,Normal
+558540,2015-06-30,17706,wholesaler,2662.17,965.0,4.478863636363636,88,Kitchen & Dining,6,1,False,False,False,True,False,True,False,Strategic
+558775,2015-07-04,18102,wholesaler,7786.0,1700.0,4.58,6,Home Decor,7,5,True,False,False,True,False,True,False,Strategic
+558776,2015-07-04,18102,wholesaler,5496.0,1200.0,4.58,6,Home Decor,7,5,True,False,False,True,False,True,False,Strategic
+558871,2015-07-04,12557,wholesaler,4146.34,1506.0,2.0046666666666666,15,Toys & Games,7,5,True,False,False,True,False,True,False,Strategic
+559137,2015-07-06,17861,wholesaler,5.2,8.0,0.65,1,Kitchen & Dining,7,0,False,False,False,True,False,False,False,Normal
+559145,2015-07-06,17404,wholesaler,2825.1,3242.0,1.9045,19,Kitchen & Dining,7,0,False,False,False,True,False,True,False,Strategic
+559322,2015-07-07,15769,wholesaler,2609.0,1372.0,2.0785714285714287,7,Apparel & Accessories,7,1,False,False,False,True,False,True,False,Strategic
+559343,2015-07-07,17961,private,4.25,1.0,4.25,1,Home Decor,7,1,False,False,False,True,False,False,True,Benign
+559465,2015-07-08,14680,wholesaler,3609.8,1568.0,2.374166666666667,24,Toys & Games,7,2,False,False,False,True,False,True,False,Strategic
+559511,2015-07-08,15920,private,2.37,3.0,0.79,1,Administrative,7,2,False,False,False,True,False,False,True,Benign
+559879,2015-07-13,15561,private,5.1,2.0,2.55,1,Party & Festive,7,0,False,False,False,True,False,False,True,Benign
+559919,2015-07-13,12415,wholesaler,2735.16,4308.0,0.6886363636363636,22,Kitchen & Dining,7,0,False,False,False,True,False,True,False,Strategic
+560032,2015-07-14,18283,wholesaler,2.5,2.0,1.25,1,Kitchen & Dining,7,1,False,False,False,True,False,False,False,Normal
+560080,2015-07-14,17450,wholesaler,3279.36,1632.0,1.9420000000000002,10,Home Decor,7,1,False,False,False,True,False,True,False,Strategic
+560360,2015-07-18,12744,wholesaler,3949.32,2160.0,3.0728,75,Home Decor,7,5,True,False,False,True,False,True,False,Strategic
+560445,2015-07-19,14156,wholesaler,11134.34,5726.0,2.844666666666667,60,Kitchen & Dining,7,6,True,False,False,True,False,True,False,Strategic
+560504,2015-07-19,13081,wholesaler,4406.61,3089.0,2.238370786516854,178,Kitchen & Dining,7,6,True,False,False,True,False,True,False,Strategic
+560580,2015-07-19,14088,wholesaler,8801.51,2565.0,4.578333333333333,84,Kitchen & Dining,7,6,True,False,False,True,False,True,False,Strategic
+560729,2015-07-20,17511,wholesaler,5433.57,3237.0,3.2752,50,Party & Festive,7,0,False,False,False,True,False,True,False,Strategic
+560841,2015-07-21,14298,wholesaler,2569.55,2169.0,1.9363636363636363,99,Home Decor,7,1,False,False,False,True,False,True,False,Strategic
+560913,2015-07-21,17961,private,4.25,1.0,4.25,1,Home Decor,7,1,False,False,False,True,False,False,True,Benign
+561051,2015-07-24,16684,wholesaler,7138.12,3312.0,3.5425,28,Kitchen & Dining,7,4,False,False,False,True,False,True,False,Strategic
+561082,2015-07-24,13230,wholesaler,5.04,12.0,0.42,1,Stationery & Craft,7,4,False,False,False,True,False,False,False,Normal
+561388,2015-07-27,12753,wholesaler,3680.4,2208.0,1.9118918918918917,37,Kitchen & Dining,7,0,False,False,False,True,False,True,False,Strategic
+561397,2015-07-27,16532,wholesaler,2606.4,1056.0,2.6500000000000004,2,Home Decor,7,0,False,False,False,True,False,True,False,Strategic
+561474,2015-07-27,14680,wholesaler,2688.27,1501.0,1.8681818181818182,22,Apparel & Accessories,7,0,False,False,False,True,False,True,False,Strategic
+561629,2015-07-28,12748,wholesaler,1.6800000000000002,12.0,0.14,1,Apparel & Accessories,7,1,False,False,False,True,False,False,False,Normal
+561633,2015-07-28,17949,wholesaler,10303.95,2565.0,4.4,8,Kitchen & Dining,7,1,False,False,False,True,False,True,False,Strategic
+561645,2015-07-28,14911,wholesaler,4345.1,2270.0,3.264838709677419,31,Kitchen & Dining,7,1,False,False,False,True,False,True,False,Strategic
+561647,2015-07-28,13340,wholesaler,3301.38,1764.0,2.290689655172414,29,Kitchen & Dining,7,1,False,False,False,True,False,True,False,Strategic
+561655,2015-07-28,18102,wholesaler,6591.6,1828.0,3.774285714285714,7,Home Decor,7,1,False,False,False,True,False,True,False,Strategic
+561659,2015-07-28,17450,wholesaler,3453.7200000000003,1180.0,2.5033333333333334,6,Home Decor,7,1,False,False,False,True,False,True,False,Strategic
+561683,2015-07-28,15518,wholesaler,1.95,1.0,1.95,1,Kitchen & Dining,7,1,False,False,False,True,False,False,False,Normal
+561895,2015-07-31,12748,wholesaler,1.25,1.0,1.25,1,Party & Festive,7,4,False,False,False,True,False,False,False,Normal
+561901,2015-07-31,14156,wholesaler,13464.26,5246.0,3.5163157894736843,19,Kitchen & Dining,7,4,False,False,False,True,False,True,False,Strategic
+561902,2015-07-31,17404,wholesaler,3633.5800000000004,2567.0,3.2241666666666666,24,Kitchen & Dining,7,4,False,False,False,True,False,True,False,Strategic
+562031,2015-08-01,16984,wholesaler,3213.19,1594.0,4.095802919708029,262,Home Decor,8,5,True,False,False,True,False,True,False,Strategic
+562046,2015-08-02,12378,wholesaler,4008.62,2529.0,2.9974429223744297,219,Kitchen & Dining,8,6,True,False,False,True,False,True,False,Strategic
+562208,2015-08-03,16324,private,3.95,1.0,3.95,1,Home Decor,8,0,False,False,False,True,False,False,True,Benign
+562348,2015-08-04,17511,wholesaler,5162.74,3005.0,2.6408771929824564,57,Kitchen & Dining,8,1,False,False,False,True,False,True,False,Strategic
+562374,2015-08-04,14911,wholesaler,4345.1,2270.0,3.264838709677419,31,Kitchen & Dining,8,1,False,False,False,True,False,True,False,Strategic
+562436,2015-08-04,17961,private,2.25,3.0,0.75,1,"Health, Beauty & Personal Care",8,1,False,False,False,True,False,False,True,Benign
+562439,2015-08-04,12931,wholesaler,18841.48,11848.0,1.8804545454545454,22,Home Decor,8,1,False,False,False,True,True,True,False,Harmful
+562608,2015-08-08,15502,wholesaler,3315.0699999999997,1905.0,3.289438202247191,89,Kitchen & Dining,8,5,True,False,False,True,False,True,False,Strategic
+562789,2015-08-09,14646,wholesaler,12341.21,7807.0,2.1063541666666667,96,Kitchen & Dining,8,6,True,False,False,True,False,True,False,Strategic
+562880,2015-08-10,15838,wholesaler,4105.94,2630.0,1.8386206896551724,29,Kitchen & Dining,8,0,False,False,False,True,False,True,False,Strategic
+562946,2015-08-11,15581,private,2500.0,1.0,2500.0,1,Administrative,8,1,False,False,False,True,False,True,False,Strategic
+563074,2015-08-11,12931,wholesaler,9349.72,6098.0,1.8890909090909092,22,Home Decor,8,1,False,False,False,True,False,True,False,Strategic
+563076,2015-08-11,14646,wholesaler,19150.66,14730.0,2.263781512605042,119,Toys & Games,8,1,False,False,False,True,True,True,False,Harmful
+563233,2015-08-14,17988,private,2.95,1.0,2.95,1,Kitchen & Dining,8,4,False,False,False,True,False,False,True,Benign
+563404,2015-08-16,16303,wholesaler,3209.15,1607.0,3.1661702127659574,94,Toys & Games,8,6,True,False,False,True,False,True,False,Strategic
+563532,2015-08-17,17511,wholesaler,3256.88,2504.0,1.940909090909091,33,Kitchen & Dining,8,0,False,False,False,True,False,True,False,Strategic
+563557,2015-08-17,15786,wholesaler,3147.64,2286.0,2.2955151515151515,165,Kitchen & Dining,8,0,False,False,False,True,False,True,False,Strategic
+563563,2015-08-17,16029,wholesaler,6578.08,2864.0,2.57875,8,Stationery & Craft,8,0,False,False,False,True,False,True,False,Strategic
+563573,2015-08-17,16734,private,2.95,1.0,2.95,1,Garden & Outdoor,8,0,False,False,False,True,False,False,True,Benign
+563590,2015-08-17,17450,wholesaler,13031.5,4878.0,3.1500000000000004,18,Kitchen & Dining,8,0,False,False,False,True,False,True,False,Strategic
+563597,2015-08-18,14305,wholesaler,4.25,1.0,4.25,1,"Health, Beauty & Personal Care",8,1,False,False,False,True,False,False,False,Normal
+563613,2015-08-18,12688,wholesaler,4863.8099999999995,3020.0,4.14164705882353,170,Kitchen & Dining,8,1,False,False,False,True,False,True,False,Strategic
+563614,2015-08-18,12415,wholesaler,21880.44,12196.0,2.254845360824742,97,Seasonal,8,1,False,False,False,True,True,True,False,Harmful
+564054,2015-08-22,17857,wholesaler,3875.88,1508.0,2.784,5,Home Decor,8,5,True,False,False,True,False,True,False,Strategic
+564310,2015-08-24,15769,wholesaler,2597.0,1372.0,2.07,7,Apparel & Accessories,8,0,False,False,False,True,False,True,False,Strategic
+564312,2015-08-24,15769,wholesaler,3744.0,1584.0,2.526666666666667,6,Apparel & Accessories,8,0,False,False,False,True,False,True,False,Strategic
+564322,2015-08-24,13694,wholesaler,2736.99,2335.0,1.3422727272727273,21,Home Decor,8,0,False,False,False,True,False,True,False,Strategic
+564650,2015-08-26,14646,wholesaler,6429.639999999999,4628.0,2.924390243902439,41,Toys & Games,8,2,False,False,False,True,False,True,False,Strategic
+564651,2015-08-26,14646,wholesaler,0.0,576.0,0.0,4,Apparel & Accessories,8,2,False,False,False,True,True,True,False,Harmful
+564856,2015-08-31,12477,wholesaler,4257.0599999999995,1151.0,4.321,90,Kitchen & Dining,8,0,False,False,False,True,False,True,False,Strategic
+565143,2015-09-01,17386,wholesaler,3.3,2.0,1.65,1,Apparel & Accessories,9,1,False,True,False,True,False,False,False,Normal
+565145,2015-09-01,12415,wholesaler,2732.92,2692.0,1.2275,8,Toys & Games,9,1,False,True,False,True,False,True,False,Strategic
+565150,2015-09-01,14298,wholesaler,5590.67,4871.0,1.8034078212290503,179,Home Decor,9,1,False,True,False,True,False,True,False,Strategic
+565291,2015-09-02,18102,wholesaler,4913.52,1680.0,2.932,5,Home Decor,9,2,False,True,False,True,False,True,False,Strategic
+565399,2015-09-02,12748,wholesaler,3.12,8.0,0.39,4,Kitchen & Dining,9,2,False,True,False,True,False,False,False,Normal
+5654,2014-04-15,2519,private,5.26,3.0,2.045,2,Miscellaneous,4,1,False,False,False,True,False,False,True,Benign
+565475,2015-09-05,14156,wholesaler,7335.06,4934.0,1.9243999999999999,50,Kitchen & Dining,9,5,True,True,False,True,False,True,False,Strategic
+565748,2015-09-06,14156,wholesaler,4005.35,1145.0,4.6979310344827585,58,Kitchen & Dining,9,6,True,True,False,True,False,True,False,Strategic
+565836,2015-09-07,17511,wholesaler,3200.2799999999997,2186.0,1.7286842105263158,38,Home Decor,9,0,False,True,False,True,False,True,False,Strategic
+565975,2015-09-08,14646,wholesaler,2.08,1.0,2.08,1,Toys & Games,9,1,False,True,False,True,False,False,False,Normal
+566056,2015-09-08,14410,private,4.11,6.0,0.9700000000000001,3,Home Decor,9,1,False,True,False,True,False,False,True,Benign
+566195,2015-09-09,12433,wholesaler,2608.11,1849.0,2.64679012345679,81,Kitchen & Dining,9,2,False,True,False,True,False,True,False,Strategic
+566465,2015-09-12,15764,wholesaler,3.35,2.0,1.675,2,Home Decor,9,5,True,True,False,True,False,False,False,Normal
+566494,2015-09-13,17404,wholesaler,4114.08,4072.0,1.2217647058823529,17,Kitchen & Dining,9,6,True,True,False,True,False,True,False,Strategic
+566557,2015-09-13,14646,wholesaler,8281.12,4951.0,6.088070175438596,57,Home Decor,9,6,True,True,False,True,False,True,False,Strategic
+566595,2015-09-13,18251,wholesaler,4314.72,7824.0,0.771875,16,Seasonal,9,6,True,True,False,True,False,True,False,Strategic
+566610,2015-09-13,17961,private,1.65,1.0,1.65,1,Stationery & Craft,9,6,True,True,False,True,False,False,True,Benign
+566929,2015-09-15,17428,wholesaler,4090.28,1848.0,3.365744680851064,47,"Health, Beauty & Personal Care",9,1,False,True,False,True,False,True,False,Strategic
+566931,2015-09-15,18102,wholesaler,5725.0,1250.0,4.58,3,Seasonal,9,1,False,True,False,True,False,True,False,Strategic
+566934,2015-09-15,18102,wholesaler,13249.94,2893.0,4.58,8,Home Decor,9,1,False,True,False,True,False,True,False,Strategic
+566935,2015-09-15,18102,wholesaler,6870.0,1500.0,4.58,5,Home Decor,9,1,False,True,False,True,False,True,False,Strategic
+566936,2015-09-15,18102,wholesaler,4351.0,950.0,4.58,7,Home Decor,9,1,False,True,False,True,False,True,False,Strategic
+566976,2015-09-16,15382,wholesaler,2582.78,1677.0,2.558965517241379,116,Toys & Games,9,2,False,True,False,True,False,True,False,Strategic
+567183,2015-09-18,14769,wholesaler,3786.27,2707.0,2.697800511508951,386,Home Decor,9,4,False,True,False,True,False,True,False,Strategic
+567192,2015-09-19,17961,private,4.859999999999999,4.0,1.2149999999999999,4,Party & Festive,9,5,True,True,False,True,False,False,True,Benign
+567280,2015-09-19,14646,wholesaler,10267.88,6932.0,2.185,66,Kitchen & Dining,9,5,True,True,False,True,False,True,False,Strategic
+567290,2015-09-19,14646,wholesaler,5350.4,3717.0,5.814210526315789,38,Toys & Games,9,5,True,True,False,True,False,True,False,Strategic
+567306,2015-09-19,12752,wholesaler,4366.78,2262.0,2.2941509433962266,53,Toys & Games,9,5,True,True,False,True,False,True,False,Strategic
+567381,2015-09-20,17450,wholesaler,22104.8,6760.0,3.5500000000000003,12,Kitchen & Dining,9,6,True,True,False,True,False,True,False,Strategic
+567384,2015-09-20,17450,wholesaler,4418.0,1876.0,2.185625,16,Home Decor,9,6,True,True,False,True,False,True,False,Strategic
+567385,2015-09-20,14866,wholesaler,5639.52,2472.0,3.1359090909090908,22,Seasonal,9,6,True,True,False,True,False,True,False,Strategic
+567387,2015-09-20,17450,wholesaler,3189.94,1232.0,2.4771428571428573,7,Home Decor,9,6,True,True,False,True,False,True,False,Strategic
+567423,2015-09-20,17450,wholesaler,31698.159999999996,12572.0,3.0641666666666665,12,Kitchen & Dining,9,6,True,True,False,True,True,True,False,Harmful
+567458,2015-09-20,17450,wholesaler,4563.84,2016.0,2.312857142857143,7,Home Decor,9,6,True,True,False,True,False,True,False,Strategic
+567480,2015-09-20,17450,wholesaler,3200.0,1000.0,3.2,2,Home Decor,9,6,True,True,False,True,False,True,False,Strategic
+567526,2015-09-21,12435,wholesaler,3850.9000000000005,1176.0,4.4141176470588235,17,Home Decor,9,0,False,True,False,True,False,True,False,Strategic
+567610,2015-09-21,17511,wholesaler,4463.08,2612.0,2.6209523809523807,42,Kitchen & Dining,9,0,False,True,False,True,False,True,False,Strategic
+567642,2015-09-21,12409,wholesaler,4.95,1.0,4.95,1,Party & Festive,9,0,False,True,False,True,False,False,False,Normal
+567656,2015-09-21,14096,wholesaler,4936.65,1211.0,6.154465558194774,419,Kitchen & Dining,9,0,False,True,False,True,False,True,False,Strategic
+567721,2015-09-22,12409,wholesaler,4860.64,2408.0,3.3445454545454543,44,Kitchen & Dining,9,1,False,True,False,True,False,True,False,Strategic
+567803,2015-09-22,18102,wholesaler,3877.56,768.0,5.138333333333333,6,Home Decor,9,1,False,True,False,True,False,True,False,Strategic
+567852,2015-09-22,18102,wholesaler,4117.4,784.0,6.518461538461539,13,Kitchen & Dining,9,1,False,True,False,True,False,True,False,Strategic
+567869,2015-09-22,16669,private,0.4,5.0,0.08,1,Administrative,9,1,False,True,False,True,True,False,False,Harmful
+567962,2015-09-23,15838,wholesaler,3187.12,1768.0,1.878235294117647,17,Kitchen & Dining,9,2,False,True,False,True,False,True,False,Strategic
+568319,2015-09-26,17389,wholesaler,4091.46,1038.0,5.093157894736842,19,Kitchen & Dining,9,5,True,True,False,True,False,True,False,Strategic
+568346,2015-09-26,14096,wholesaler,3671.44,937.0,6.10510447761194,333,Kitchen & Dining,9,5,True,True,False,True,False,True,False,Strategic
+568384,2015-09-27,12748,wholesaler,0.0,1.0,0.0,1,Administrative,9,6,True,True,False,True,True,False,False,Harmful
+568717,2015-09-28,18102,wholesaler,2748.0,600.0,4.58,2,Home Decor,9,0,False,True,False,True,False,True,False,Strategic
+568781,2015-09-29,14952,wholesaler,2505.84,1000.0,3.2868749999999998,16,Kitchen & Dining,9,1,False,True,False,True,False,True,False,Strategic
+569010,2015-09-30,14156,wholesaler,5867.08,2720.0,2.5496296296296297,27,Kitchen & Dining,9,2,False,True,False,True,False,True,False,Strategic
+569030,2015-09-30,17450,wholesaler,2800.0,350.0,8.0,9,Home Decor,9,2,False,True,False,True,False,True,False,Strategic
+569084,2015-09-30,17949,wholesaler,2496.0,384.0,6.5,1,Seasonal,9,2,False,True,False,True,False,True,False,Strategic
+569099,2015-09-30,17961,private,3.25,1.0,3.25,1,Toys & Games,9,2,False,True,False,True,False,False,True,Benign
+569246,2015-10-03,14096,wholesaler,2900.99,710.0,5.631228070175438,280,Kitchen & Dining,10,5,True,True,False,True,False,True,False,Strategic
+569255,2015-10-03,18102,wholesaler,5164.66,1934.0,2.822222222222222,18,Home Decor,10,5,True,True,False,True,False,True,False,Strategic
+569263,2015-10-03,18102,wholesaler,4849.1,1702.0,3.2507692307692313,13,Home Decor,10,5,True,True,False,True,False,True,False,Strategic
+569343,2015-10-03,18102,wholesaler,7298.76,1764.0,4.116153846153846,13,Home Decor,10,5,True,True,False,True,False,True,False,Strategic
+569382,2015-10-03,15502,wholesaler,3155.95,1.0,3155.95,1,Administrative,10,5,True,True,False,True,False,True,False,Strategic
+569492,2015-10-04,16333,wholesaler,3733.0,2584.0,1.6199999999999999,3,Home Decor,10,6,True,True,False,True,False,True,False,Strategic
+569570,2015-10-05,16684,wholesaler,13760.02,7020.0,2.6424000000000003,25,Kitchen & Dining,10,0,False,True,False,True,False,True,False,Strategic
+569571,2015-10-05,16684,wholesaler,2487.4,2788.0,0.9023076923076924,13,Seasonal,10,0,False,True,False,True,False,True,False,Strategic
+569573,2015-10-05,17511,wholesaler,3855.84,2085.0,2.9890909090909092,33,Kitchen & Dining,10,0,False,True,False,True,False,True,False,Strategic
+569583,2015-10-05,15039,wholesaler,2.95,1.0,2.95,1,Home Decor,10,0,False,True,False,True,False,False,False,Normal
+569650,2015-10-05,12415,wholesaler,15643.77,6895.0,3.206666666666667,81,Home Decor,10,0,False,True,False,True,False,True,False,Strategic
+569653,2015-10-05,12451,wholesaler,2539.56,1650.0,2.7869,100,Toys & Games,10,0,False,True,False,True,False,True,False,Strategic
+569740,2015-10-06,15769,wholesaler,2924.0,1600.0,1.8686666666666667,15,Apparel & Accessories,10,1,False,True,False,True,False,True,False,Strategic
+569815,2015-10-06,15838,wholesaler,10992.96,6016.0,2.0823809523809524,21,Kitchen & Dining,10,1,False,True,False,True,False,True,False,Strategic
+569846,2015-10-06,13422,wholesaler,2626.3,1326.0,3.0306299212598424,127,Kitchen & Dining,10,1,False,True,False,True,False,True,False,Strategic
+569906,2015-10-06,12748,wholesaler,1.9,2.0,0.95,1,Apparel & Accessories,10,1,False,True,False,True,False,False,False,Normal
+570094,2015-10-07,16029,wholesaler,4186.08,2304.0,2.5975,4,Apparel & Accessories,10,2,False,True,False,True,False,True,False,Strategic
+570097,2015-10-07,16029,wholesaler,7630.5599999999995,4176.0,2.5025,8,Stationery & Craft,10,2,False,True,False,True,False,True,False,Strategic
+570201,2015-10-07,16918,private,2.08,1.0,2.08,1,Toys & Games,10,2,False,True,False,True,False,False,True,Benign
+570226,2015-10-09,16931,wholesaler,4.35,3.0,1.45,1,Home Decor,10,4,False,True,False,True,False,False,False,Normal
+570275,2015-10-10,13098,wholesaler,2482.44,1263.0,2.2327586206896552,29,Seasonal,10,5,True,True,False,True,False,True,False,Strategic
+570488,2015-10-10,14096,wholesaler,3380.86,779.0,5.977195467422096,347,Kitchen & Dining,10,5,True,True,False,True,False,True,False,Strategic
+570554,2015-10-11,14800,wholesaler,0.38,1.0,0.38,1,Seasonal,10,6,True,True,False,True,False,False,False,Normal
+570557,2015-10-11,16029,wholesaler,7810.5599999999995,4176.0,2.53375,8,Stationery & Craft,10,6,True,True,False,True,False,True,False,Strategic
+570660,2015-10-11,14866,wholesaler,3930.94,1570.0,3.1495238095238096,21,Kitchen & Dining,10,6,True,True,False,True,False,True,False,Strategic
+570672,2015-10-11,12536,wholesaler,4279.71,2801.0,2.891158301158301,259,Kitchen & Dining,10,6,True,True,False,True,False,True,False,Strategic
+570725,2015-10-12,12381,private,4.5,1.0,4.5,1,Administrative,10,0,False,True,False,True,False,False,True,Benign
+570886,2015-10-13,13777,wholesaler,3953.35,1941.0,2.4672727272727273,22,"Health, Beauty & Personal Care",10,1,False,True,False,True,False,True,False,Strategic
+571034,2015-10-13,12359,wholesaler,2814.3,644.0,7.743333333333334,100,Home Decor,10,1,False,True,False,True,False,True,False,Strategic
+571060,2015-10-13,17813,private,2.49,1.0,2.49,1,"Health, Beauty & Personal Care",10,1,False,True,False,True,False,False,True,Benign
+571255,2015-10-14,12454,wholesaler,3528.34,1006.0,7.282,15,Home Decor,10,2,False,True,False,True,False,True,False,Strategic
+571281,2015-10-16,14088,wholesaler,8132.31,1624.0,5.868229166666667,96,Home Decor,10,4,False,True,False,True,False,True,False,Strategic
+5713,2015-03-20,2535,private,5.49,3.0,1.83,1,Bakery & Snacks,3,4,False,False,False,True,False,False,True,Benign
+571318,2015-10-17,17404,wholesaler,5296.96,5952.0,1.2970000000000002,30,Kitchen & Dining,10,5,True,True,False,True,False,True,False,Strategic
+571441,2015-10-17,14096,wholesaler,4050.6099999999997,995.0,6.206703296703296,363,Kitchen & Dining,10,5,True,True,False,True,False,True,False,Strategic
+571653,2015-10-18,14298,wholesaler,5355.68,5918.0,1.6303960396039603,202,Home Decor,10,6,True,True,False,True,False,True,False,Strategic
+571739,2015-10-19,12500,wholesaler,3.0,1.0,3.0,1,Administrative,10,0,False,True,False,True,False,False,False,Normal
+571751,2015-10-19,12744,wholesaler,6068.0599999999995,2.0,3034.0299999999997,1,Administrative,10,0,False,True,False,True,False,True,False,Strategic
+571864,2015-10-19,12731,wholesaler,2503.74,566.0,4.9087499999999995,16,Kitchen & Dining,10,0,False,True,False,True,False,True,False,Strategic
+571937,2015-10-20,14911,wholesaler,2856.14,4462.0,1.5535714285714286,84,Kitchen & Dining,10,1,False,True,False,True,False,True,False,Strategic
+572035,2015-10-20,14646,wholesaler,20277.92,13392.0,2.60208,125,Kitchen & Dining,10,1,False,True,False,True,True,True,False,Harmful
+572051,2015-10-20,14646,wholesaler,4311.48,3020.0,1.8745,20,Party & Festive,10,1,False,True,False,True,False,True,False,Strategic
+572066,2015-10-20,15159,wholesaler,3091.98,1642.0,2.2677,100,Home Decor,10,1,False,True,False,True,False,True,False,Strategic
+572193,2015-10-21,15061,wholesaler,3648.6,3176.0,2.8390909090909093,11,Seasonal,10,2,False,True,False,True,False,True,False,Strategic
+572196,2015-10-21,18102,wholesaler,7398.54,2782.0,3.185,16,Home Decor,10,2,False,True,False,True,False,True,False,Strategic
+572209,2015-10-21,18102,wholesaler,22206.0,1920.0,12.357142857142858,7,Home Decor,10,2,False,True,False,True,False,True,False,Strategic
+572324,2015-10-24,14607,wholesaler,2949.2799999999997,2344.0,2.417777777777778,9,Home Decor,10,5,True,True,False,True,False,True,False,Strategic
+572552,2015-10-24,14096,wholesaler,3472.42,843.0,5.964119318181818,352,Administrative,10,5,True,True,False,True,False,True,False,Strategic
+572696,2015-10-25,17857,wholesaler,3640.0,1001.0,65.0425,4,Home Decor,10,6,True,True,False,True,False,True,False,Strategic
+572774,2015-10-26,16966,wholesaler,3.25,1.0,3.25,1,Toys & Games,10,0,False,True,False,True,False,False,False,Normal
+572832,2015-10-26,16454,private,1.0,1.0,1.0,1,Administrative,10,0,False,True,False,True,False,False,True,Benign
+573002,2015-10-27,14646,wholesaler,4534.22,3069.0,1.7564000000000002,25,Toys & Games,10,1,False,True,False,True,False,True,False,Strategic
+573003,2015-10-27,14646,wholesaler,4992.0,2400.0,2.08,1,Home Decor,10,1,False,True,False,True,False,True,False,Strategic
+573077,2015-10-27,12536,wholesaler,4161.06,1.0,4161.06,1,Administrative,10,1,False,True,False,True,False,True,False,Strategic
+573080,2015-10-27,12536,wholesaler,4161.06,1.0,4161.06,1,Administrative,10,1,False,True,False,True,False,True,False,Strategic
+573153,2015-10-28,12678,wholesaler,8895.76,5205.0,4.054262295081967,61,Home Decor,10,2,False,True,False,True,False,True,False,Strategic
+573263,2015-10-28,13694,wholesaler,3304.0299999999997,3917.0,1.3277272727272729,22,Kitchen & Dining,10,2,False,True,False,True,False,True,False,Strategic
+573320,2015-10-30,15513,wholesaler,2520.28,857.0,3.9626315789473687,38,Home Decor,10,4,False,True,False,True,False,True,False,Strategic
+573576,2015-10-31,14096,wholesaler,4941.71,1265.0,6.09848275862069,434,Kitchen & Dining,10,5,True,True,False,True,False,True,False,Strategic
+574056,2015-11-02,14646,wholesaler,3949.66,2454.0,1.9013333333333333,30,Kitchen & Dining,11,0,False,True,False,True,False,True,False,Strategic
+574067,2015-11-02,14088,wholesaler,3962.85,1161.0,3.8261764705882353,34,Seasonal,11,0,False,True,False,True,False,True,False,Strategic
+574092,2015-11-03,16684,wholesaler,5500.38,4074.0,2.3966666666666665,21,Kitchen & Dining,11,1,False,True,False,True,False,True,False,Strategic
+574285,2015-11-03,17450,wholesaler,2907.2000000000003,1024.0,2.4783333333333335,6,Home Decor,11,1,False,True,False,True,False,True,False,Strategic
+574293,2015-11-03,17450,wholesaler,6162.620000000001,2290.0,2.3800000000000003,9,Home Decor,11,1,False,True,False,True,False,True,False,Strategic
+574294,2015-11-03,16333,wholesaler,5727.0,3840.0,1.6199999999999999,3,Seasonal,11,1,False,True,False,True,False,True,False,Strategic
+574295,2015-11-03,17389,wholesaler,7427.32,1952.0,4.736666666666666,21,Kitchen & Dining,11,1,False,True,False,True,False,True,False,Strategic
+574328,2015-11-04,13081,wholesaler,7271.34,4981.0,2.265048076923077,208,"Health, Beauty & Personal Care",11,2,False,True,False,True,False,True,False,Strategic
+574341,2015-11-04,18102,wholesaler,4557.6,4752.0,0.9590909090909091,11,Kitchen & Dining,11,2,False,True,False,True,False,True,False,Strategic
+574352,2015-11-04,18102,wholesaler,5292.72,1776.0,3.207142857142857,14,Home Decor,11,2,False,True,False,True,False,True,False,Strategic
+574363,2015-11-04,18102,wholesaler,5028.76,1418.0,3.7323076923076925,13,Home Decor,11,2,False,True,False,True,False,True,False,Strategic
+574549,2015-11-04,17841,wholesaler,1.45,1.0,1.45,1,Home Decor,11,2,False,True,False,True,False,False,False,Normal
+574740,2015-11-06,12357,wholesaler,6207.67,2708.0,3.3486259541984733,131,Kitchen & Dining,11,4,False,True,False,True,False,True,False,Strategic
+575043,2015-11-08,13047,wholesaler,4.95,1.0,4.95,1,Administrative,11,6,True,True,False,True,False,False,False,Normal
+575219,2015-11-09,17511,wholesaler,7059.54,4675.0,2.0831818181818185,66,Apparel & Accessories,11,0,False,True,False,True,False,True,False,Strategic
+575220,2015-11-09,17511,wholesaler,2506.0,1400.0,1.7900000000000003,14,Apparel & Accessories,11,0,False,True,False,True,False,True,False,Strategic
+575328,2015-11-09,17857,wholesaler,2640.0,2400.0,1.61,5,Stationery & Craft,11,0,False,True,False,True,False,True,False,Strategic
+575335,2015-11-09,12931,wholesaler,4961.2,3684.0,1.4955555555555557,8,Home Decor,11,0,False,True,False,True,False,True,False,Strategic
+575508,2015-11-10,14646,wholesaler,8111.2,6712.0,2.0141509433962264,53,Toys & Games,11,1,False,True,False,True,False,True,False,Strategic
+575516,2015-11-10,17340,wholesaler,3893.79,1690.0,3.8729310344827583,116,Home Decor,11,1,False,True,False,True,False,True,False,Strategic
+575607,2015-11-10,14096,wholesaler,4358.0,1014.0,6.477135278514589,375,Administrative,11,1,False,True,False,True,False,True,False,Strategic
+575675,2015-11-10,18283,wholesaler,1.95,1.0,1.95,1,Toys & Games,11,1,False,True,False,True,False,False,False,Normal
+575683,2015-11-10,17389,wholesaler,3782.52,954.0,4.723333333333333,18,Kitchen & Dining,11,1,False,True,False,True,False,True,False,Strategic
+575687,2015-11-10,16126,wholesaler,2581.07,1041.0,3.2770454545454544,44,Seasonal,11,1,False,True,False,True,False,True,False,Strategic
+575878,2015-11-11,13588,wholesaler,5.43,13.0,0.405,2,Stationery & Craft,11,2,False,True,False,True,False,False,False,Normal
+575910,2015-11-11,14836,private,3.0,2.0,1.5,1,Administrative,11,2,False,True,False,True,False,False,True,Benign
+575919,2015-11-11,15311,wholesaler,4041.18,2683.0,2.1796385542168673,82,Apparel & Accessories,11,2,False,True,False,True,False,True,False,Strategic
+575967,2015-11-13,16794,private,2.95,1.0,2.95,1,Kitchen & Dining,11,4,False,True,False,True,False,False,True,Benign
+576090,2015-11-14,17450,wholesaler,3174.3999999999996,1376.0,2.0144444444444445,9,Home Decor,11,5,True,True,False,True,False,True,False,Strategic
+576179,2015-11-14,13694,wholesaler,3419.64,2244.0,1.5216666666666667,18,Apparel & Accessories,11,5,True,True,False,True,False,True,False,Strategic
+576219,2015-11-14,15838,wholesaler,3134.96,1600.0,2.14625,16,Kitchen & Dining,11,5,True,True,False,True,False,True,False,Strategic
+576339,2015-11-14,14096,wholesaler,8425.539999999999,2175.0,7.0153136531365305,541,Kitchen & Dining,11,5,True,True,False,True,False,True,False,Strategic
+576374,2015-11-15,13777,wholesaler,6260.9,3154.0,2.366842105263158,19,Home Decor,11,6,True,True,False,True,False,True,False,Strategic
+576394,2015-11-15,12415,wholesaler,4925.8,2890.0,2.0665384615384617,26,Home Decor,11,6,True,True,False,True,False,True,False,Strategic
+576653,2015-11-16,14156,wholesaler,4391.16,2900.0,2.3673076923076923,26,"Health, Beauty & Personal Care",11,0,False,True,False,True,False,True,False,Strategic
+576666,2015-11-16,17841,wholesaler,4.2,2.0,2.1,1,Toys & Games,11,0,False,True,False,True,False,False,False,Normal
+576923,2015-11-17,12753,wholesaler,4808.48,2210.0,3.1432258064516128,31,Home Decor,11,1,False,True,False,True,False,True,False,Strategic
+577177,2015-11-18,12748,wholesaler,4.16,2.0,2.08,1,Home Decor,11,2,False,True,False,True,False,False,False,Normal
+577387,2015-11-18,17961,private,4.25,1.0,4.25,1,Apparel & Accessories,11,2,False,True,False,True,False,False,True,Benign
+577747,2015-11-21,17450,wholesaler,5490.24,1182.0,6.670714285714285,14,Home Decor,11,5,True,True,False,True,False,True,False,Strategic
+577754,2015-11-21,18139,wholesaler,2675.2799999999997,1524.0,1.6379411764705885,34,Party & Festive,11,5,True,True,False,True,False,True,False,Strategic
+577783,2015-11-21,18139,wholesaler,2786.4,1644.0,1.616857142857143,35,Party & Festive,11,5,True,True,False,True,False,True,False,Strategic
+578125,2015-11-23,17511,wholesaler,3956.6800000000003,3806.0,1.4397777777777778,45,Seasonal,11,0,False,True,False,True,False,True,False,Strategic
+578140,2015-11-23,14646,wholesaler,7952.679999999999,5760.0,2.713809523809524,42,Toys & Games,11,0,False,True,False,True,False,True,False,Strategic
+578154,2015-11-23,15117,wholesaler,1.65,1.0,1.65,1,Apparel & Accessories,11,0,False,True,False,True,False,False,False,Normal
+578268,2015-11-23,12748,wholesaler,5.45,1.0,5.45,1,Party & Festive,11,0,False,True,False,True,False,False,False,Normal
+578270,2015-11-23,14096,wholesaler,6936.5199999999995,1801.0,7.207918552036198,439,Kitchen & Dining,11,0,False,True,False,True,False,True,False,Strategic
+578305,2015-11-23,14088,wholesaler,10584.77,2111.0,6.267954545454545,131,Home Decor,11,0,False,True,False,True,False,True,False,Strategic
+578321,2015-11-23,12557,wholesaler,2990.0,920.0,3.175,4,Toys & Games,11,0,False,True,False,True,False,True,False,Strategic
+578670,2015-11-24,17323,private,4.949999999999999,3.0,1.65,1,Apparel & Accessories,11,1,False,True,False,True,False,False,True,Benign
+578782,2015-11-25,15872,private,2.1,1.0,2.1,1,Apparel & Accessories,11,2,False,True,False,True,False,False,True,Benign
+578841,2015-11-25,13256,wholesaler,0.0,12540.0,0.0,1,Party & Festive,11,2,False,True,False,True,True,True,False,Harmful
+579196,2015-11-28,14096,wholesaler,8107.72,2106.0,7.372439024390244,529,Kitchen & Dining,11,5,True,True,False,True,False,True,False,Strategic
+579251,2015-11-28,17450,wholesaler,3821.36,1456.0,2.513333333333333,3,Home Decor,11,5,True,True,False,True,False,True,False,Strategic
+579271,2015-11-29,17450,wholesaler,2586.6899999999996,649.0,3.7030000000000003,10,Kitchen & Dining,11,6,True,True,False,True,False,True,False,Strategic
+579284,2015-11-29,15061,wholesaler,3337.44,1619.0,2.5576190476190477,21,Kitchen & Dining,11,6,True,True,False,True,False,True,False,Strategic
+579448,2015-11-29,14390,wholesaler,4.68,12.0,0.39,1,Seasonal,11,6,True,True,False,True,False,False,False,Normal
+579498,2015-11-29,12798,wholesaler,3651.6,2040.0,1.79,1,Home Decor,11,6,True,True,False,True,False,True,False,Strategic
+579692,2015-11-30,12433,wholesaler,2843.29,2299.0,2.4220588235294116,68,Kitchen & Dining,11,0,False,True,False,True,False,True,False,Strategic
+579725,2015-11-30,15060,private,2.88,24.0,0.12,1,Seasonal,11,0,False,True,False,True,False,False,True,Benign
+580149,2015-12-02,12748,wholesaler,5.45,1.0,5.45,1,Party & Festive,12,2,False,False,False,True,False,False,False,Normal
+580297,2015-12-02,15769,wholesaler,3404.0,1744.0,2.2800000000000002,8,Apparel & Accessories,12,2,False,False,False,True,False,True,False,Strategic
+580363,2015-12-02,13868,wholesaler,2685.0,1500.0,1.79,1,"Health, Beauty & Personal Care",12,2,False,False,False,True,False,True,False,Strategic
+580601,2015-12-05,12841,wholesaler,5.0,4.0,1.25,1,Seasonal,12,5,True,False,False,True,False,False,False,Normal
+580665,2015-12-05,16684,wholesaler,5401.98,4732.0,1.9920689655172412,29,Kitchen & Dining,12,5,True,False,False,True,False,True,False,Strategic
+580668,2015-12-05,13685,wholesaler,5.48,4.0,1.37,4,Apparel & Accessories,12,5,True,False,False,True,False,False,False,Normal
+580673,2015-12-05,13089,wholesaler,3705.48,1892.0,2.5798591549295775,71,"Health, Beauty & Personal Care",12,5,True,False,False,True,False,True,False,Strategic
+580727,2015-12-05,14096,wholesaler,8935.98,2193.0,7.526540642722117,525,Kitchen & Dining,12,5,True,False,False,True,False,True,False,Strategic
+580820,2015-12-06,13685,wholesaler,3.2,2.0,1.6,2,Kitchen & Dining,12,6,True,False,False,True,False,False,False,Normal
+580873,2015-12-06,15061,wholesaler,3895.8599999999997,1410.0,3.228,15,Kitchen & Dining,12,6,True,False,False,True,False,True,False,Strategic
+580985,2015-12-06,17389,wholesaler,4414.88,1160.0,5.154117647058824,17,Kitchen & Dining,12,6,True,False,False,True,False,True,False,Strategic
+581020,2015-12-07,17511,wholesaler,4949.24,3295.0,2.3762499999999998,40,Seasonal,12,0,False,False,False,True,False,True,False,Strategic
+581105,2015-12-07,16000,wholesaler,8345.2,4340.0,1.9228571428571428,7,Home Decor,12,0,False,False,False,True,False,True,False,Strategic
+581115,2015-12-07,15195,wholesaler,3861.0,1404.0,2.75,1,Home Decor,12,0,False,False,False,True,False,True,False,Strategic
+581175,2015-12-07,14646,wholesaler,10901.54,7366.0,2.2953246753246757,77,Home Decor,12,0,False,False,False,True,False,True,False,Strategic
+581375,2015-12-08,16210,wholesaler,3599.4,1056.0,7.850833333333334,12,Stationery & Craft,12,1,False,False,False,True,False,True,False,Strategic
+581457,2015-12-08,18102,wholesaler,10363.82,2414.0,4.777272727272727,11,Home Decor,12,1,False,False,False,True,False,True,False,Strategic
+581476,2015-12-09,12433,wholesaler,2618.89,2215.0,2.39,65,Kitchen & Dining,12,2,False,False,False,True,False,True,False,Strategic
+581483,2015-12-09,16446,wholesaler,168469.6,80995.0,2.08,1,Stationery & Craft,12,2,False,False,False,True,True,True,False,Harmful
+5938,2014-04-13,2593,private,4.92,2.0,2.46,2,Household,4,6,True,False,False,True,False,False,True,Benign
+6002,2015-02-26,2610,private,3.38,2.0,1.69,2,Bakery & Snacks,2,3,False,False,True,True,False,False,True,Benign
+6031,2015-05-22,2617,private,5.17,2.0,2.585,2,Bakery & Snacks,5,4,False,False,False,True,False,False,True,Benign
+6036,2014-01-12,2618,private,2.4699999999999998,2.0,1.2349999999999999,2,Bakery & Snacks,1,6,True,False,True,True,False,False,True,Benign
+619,2014-04-15,1169,private,3.08,2.0,1.54,1,Household,4,1,False,False,False,True,False,False,True,Benign
+6339,2014-08-16,2701,private,5.04,2.0,2.52,2,Condiments & Spices,8,5,True,False,False,True,False,False,True,Benign
+637,2014-04-18,1173,private,4.68,2.0,2.34,2,Condiments & Spices,4,4,False,False,False,True,False,False,True,Benign
+6371,2014-05-25,2708,private,3.37,1.0,3.37,1,Beverages,5,6,True,False,False,True,False,False,True,Benign
+6453,2014-03-17,2730,private,3.83,3.0,1.415,2,Bakery & Snacks,3,0,False,False,False,True,False,False,True,Benign
+6521,2014-04-02,2748,private,4.99,3.0,1.795,2,Dairy,4,2,False,False,False,True,False,False,True,Benign
+6576,2015-04-25,2761,private,5.390000000000001,2.0,2.6950000000000003,2,Produce,4,5,True,False,False,True,False,False,True,Benign
+6677,2014-02-17,2788,private,4.15,2.0,2.075,2,Bakery & Snacks,2,0,False,False,True,True,False,False,True,Benign
+6680,2014-11-02,2789,private,4.84,4.0,1.42,2,Bakery & Snacks,11,6,True,True,False,True,False,False,True,Benign
+672,2014-09-30,1182,private,2.91,2.0,1.455,2,Bakery & Snacks,9,1,False,True,False,True,False,False,True,Benign
+6839,2014-07-07,2832,private,5.5600000000000005,2.0,2.7800000000000002,2,Household,7,0,False,False,False,True,False,False,True,Benign
+6843,2014-08-01,2834,private,4.57,2.0,2.285,2,Dairy,8,4,False,False,False,True,False,False,True,Benign
+6849,2014-08-11,2835,private,5.26,2.0,2.63,2,Produce,8,0,False,False,False,True,False,False,True,Benign
+6851,2014-11-21,2835,private,4.93,3.0,1.69,2,Household,11,4,False,True,False,True,False,False,True,Benign
+6904,2014-02-27,2850,private,5.49,3.0,1.83,1,Bakery & Snacks,2,3,False,False,True,True,False,False,True,Benign
+6910,2014-01-16,2851,private,4.02,2.0,2.01,2,Beverages,1,3,False,False,True,True,False,False,True,Benign
+6921,2014-06-19,2854,private,5.21,3.0,1.69,2,Bakery & Snacks,6,3,False,False,False,True,False,False,True,Benign
+7061,2014-04-16,2893,private,5.13,3.0,2.045,2,Produce,4,2,False,False,False,True,False,False,True,Benign
+710,2014-02-27,1194,private,4.23,2.0,2.115,2,Produce,2,3,False,False,True,True,False,False,True,Benign
+7159,2014-06-06,2922,private,5.5600000000000005,2.0,2.7800000000000002,2,Beverages,6,4,False,False,False,True,False,False,True,Benign
+7257,2014-04-11,2948,private,4.22,2.0,2.11,2,Dairy,4,4,False,False,False,True,False,False,True,Benign
+7305,2014-03-11,2960,private,5.07,3.0,1.76,2,Household,3,1,False,False,False,True,False,False,True,Benign
+7321,2015-04-26,2962,private,5.03,2.0,2.515,2,Produce,4,6,True,False,False,True,False,False,True,Benign
+7416,2014-03-30,2990,private,4.77,3.0,1.65,2,Bakery & Snacks,3,6,True,False,False,True,False,False,True,Benign
+7420,2014-04-22,2991,private,5.1,3.0,1.7,3,Dairy,4,1,False,False,False,True,False,False,True,Benign
+7460,2014-04-22,3003,private,4.49,3.0,1.47,2,Household,4,1,False,False,False,True,False,False,True,Benign
+7552,2014-11-20,3028,private,3.54,3.0,1.27,2,Bakery & Snacks,11,3,False,True,False,True,False,False,True,Benign
+7580,2014-02-21,3035,private,4.03,2.0,2.015,2,Beverages,2,4,False,False,True,True,False,False,True,Benign
+7698,2014-10-17,3066,private,5.52,2.0,2.76,2,Produce,10,4,False,True,False,True,False,False,True,Benign
+7813,2015-08-22,3096,private,5.59,2.0,2.795,2,Produce,8,5,True,False,False,True,False,False,True,Benign
+7848,2014-05-11,3106,private,4.74,2.0,2.37,2,Miscellaneous,5,6,True,False,False,True,False,False,True,Benign
+7892,2014-01-09,3117,private,5.45,2.0,2.725,2,Produce,1,3,False,False,True,True,False,False,True,Benign
+8026,2014-06-24,3153,private,5.5600000000000005,2.0,2.7800000000000002,2,Household,6,1,False,False,False,True,False,False,True,Benign
+8059,2014-12-29,3163,private,3.75,2.0,1.875,2,Miscellaneous,12,0,False,False,False,True,False,False,True,Benign
+8067,2015-01-11,3165,private,5.5600000000000005,2.0,2.7800000000000002,2,Produce,1,6,True,False,True,True,False,False,True,Benign
+8102,2014-04-29,3175,private,5.49,3.0,1.83,1,Bakery & Snacks,4,1,False,False,False,True,False,False,True,Benign
+8225,2015-06-29,3206,private,5.23,3.0,1.695,2,Dairy,6,0,False,False,False,True,False,False,True,Benign
+8267,2014-01-21,3219,private,3.74,2.0,1.87,2,Dairy,1,1,False,False,True,True,False,False,True,Benign
+8344,2014-07-29,3242,private,4.16,2.0,2.08,2,Bakery & Snacks,7,1,False,False,False,True,False,False,True,Benign
+8375,2014-04-16,3248,private,5.34,3.0,1.685,2,Dairy,4,2,False,False,False,True,False,False,True,Benign
+842,2014-04-07,1233,private,3.81,2.0,1.905,2,Dairy,4,0,False,False,False,True,False,False,True,Benign
+8446,2014-10-30,3266,private,3.8,2.0,1.9,2,Dairy,10,3,False,True,False,True,False,False,True,Benign
+8458,2015-10-07,3269,private,4.16,2.0,2.08,2,Dairy,10,2,False,True,False,True,False,False,True,Benign
+848,2014-05-12,1234,private,5.61,2.0,2.805,2,Bakery & Snacks,5,0,False,False,False,True,False,False,True,Benign
+8516,2015-04-26,3288,private,4.38,2.0,2.19,2,Bakery & Snacks,4,6,True,False,False,True,False,False,True,Benign
+860,2015-05-11,1236,private,4.71,3.0,1.725,2,Household,5,0,False,False,False,True,False,False,True,Benign
+8601,2014-06-06,3309,private,4.529999999999999,3.0,1.68,2,Miscellaneous,6,4,False,False,False,True,False,False,True,Benign
+862,2015-03-08,1237,private,4.77,3.0,1.65,2,Dairy,3,6,True,False,False,True,False,False,True,Benign
+8680,2015-02-21,3329,private,3.66,2.0,1.83,1,Bakery & Snacks,2,5,True,False,True,True,False,False,True,Benign
+8708,2014-10-06,3341,private,4.22,2.0,2.11,2,Bakery & Snacks,10,0,False,True,False,True,False,False,True,Benign
+874,2015-01-24,1239,private,3.51,2.0,1.755,2,Dairy,1,5,True,False,True,True,False,False,True,Benign
+881,2014-01-11,1241,private,3.77,2.0,1.885,2,Dairy,1,5,True,False,True,True,False,False,True,Benign
+8931,2014-08-20,3405,private,4.87,2.0,2.435,2,Dairy,8,2,False,False,False,True,False,False,True,Benign
+9020,2015-04-04,3432,private,5.35,2.0,2.675,2,Bakery & Snacks,4,5,True,False,False,True,False,False,True,Benign
+913,2014-03-25,1248,private,2.85,1.0,2.85,1,Condiments & Spices,3,1,False,False,False,True,False,False,True,Benign
+9204,2014-07-24,3482,private,5.55,3.0,1.68,2,Bakery & Snacks,7,3,False,False,False,True,False,False,True,Benign
+9238,2014-06-25,3488,private,4.55,2.0,2.275,2,Miscellaneous,6,2,False,False,False,True,False,False,True,Benign
+9296,2014-07-12,3502,private,4.87,2.0,2.435,2,Dairy,7,5,True,False,False,True,False,False,True,Benign
+9353,2015-07-14,3517,private,3.66,2.0,1.83,2,Dairy,7,1,False,False,False,True,False,False,True,Benign
+9433,2014-06-21,3537,private,2.68,1.0,2.68,1,Dairy,6,5,True,False,False,True,False,False,True,Benign
+9434,2015-09-24,3537,private,4.03,2.0,2.015,2,Bakery & Snacks,9,3,False,True,False,True,False,False,True,Benign
+9455,2014-09-13,3543,private,5.0600000000000005,3.0,1.615,2,Bakery & Snacks,9,5,True,True,False,True,False,False,True,Benign
+9468,2014-09-09,3546,private,2.47,1.0,2.47,1,Beverages,9,1,False,True,False,True,False,False,True,Benign
+9489,2014-12-06,3550,private,5.49,2.0,2.745,2,Dairy,12,5,True,False,False,True,False,False,True,Benign
+9503,2014-11-05,3554,private,5.49,3.0,2.245,2,Condiments & Spices,11,2,False,True,False,True,False,False,True,Benign
+9580,2014-02-20,3574,private,4.31,3.0,1.5699999999999998,2,Miscellaneous,2,3,False,False,True,True,False,False,True,Benign

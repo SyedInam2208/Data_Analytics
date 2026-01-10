@@ -1,300 +1,133 @@
-"""Data cleaning and integration."""
-
+from pathlib import Path
 import pandas as pd
-import numpy as np
-from typing import Tuple, Dict
 
 
-class DataCleaner:
-
-    def __init__(self, customers: pd.DataFrame, products: pd.DataFrame,
-                 invoice_items: pd.DataFrame, purchases: pd.DataFrame):
-        self.customers = customers.copy()
-        self.products = products.copy()
-        self.invoice_items = invoice_items.copy()
-        self.purchases = purchases.copy()
-        self.cleaning_stats = {}
-
-    def remove_duplicates(self) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        print("\n" + "=" * 60)
-        print("REMOVING DUPLICATES")
-        print("=" * 60)
-
-        invoice_before = len(self.invoice_items)
-        self.invoice_items = self.invoice_items.drop_duplicates()
-        invoice_removed = invoice_before - len(self.invoice_items)
-        print(f"Invoice Items: Removed {invoice_removed:,} duplicates ({invoice_removed/invoice_before*100:.2f}%)")
-
-        purchases_before = len(self.purchases)
-        self.purchases = self.purchases.drop_duplicates()
-        purchases_removed = purchases_before - len(self.purchases)
-        print(f"Purchases: Removed {purchases_removed:,} duplicates ({purchases_removed/purchases_before*100:.2f}%)")
-
-        self.cleaning_stats['duplicates_removed'] = {
-            'invoice_items': invoice_removed,
-            'purchases': purchases_removed
-        }
-
-        return self.invoice_items, self.purchases
-
-    def create_integrated_table(self) -> pd.DataFrame:
-        """Join all tables using invoice_items as base."""
-        print("\n" + "=" * 60)
-        print("CREATING INTEGRATED TABLE")
-        print("=" * 60)
-
-        df = self.invoice_items.copy()
-        initial_count = len(df)
-        print(f"Base table (invoice_items): {initial_count:,} records")
-
-        df = df.merge(
-            self.purchases[['InvoiceID', 'product_id', 'date', 'CustomerID']],
-            on=['InvoiceID', 'product_id'],
-            how='left'
-        )
-        print(f"After joining purchases: {len(df):,} records")
-
-        unmatched_purchases = df['CustomerID'].isna().sum()
-        if unmatched_purchases > 0:
-            print(f"  Warning: {unmatched_purchases:,} records without purchase data")
-
-        df = df.merge(
-            self.customers[['CustomerID', 'customer_type']],
-            on='CustomerID',
-            how='left'
-        )
-        print(f"After joining customers: {len(df):,} records")
-
-        unmatched_customers = df['customer_type'].isna().sum()
-        if unmatched_customers > 0:
-            print(f"  Warning: {unmatched_customers:,} records without customer data")
-
-        products_renamed = self.products.copy()
-        products_renamed = products_renamed.rename(columns={'price': 'product_price'})
-
-        df = df.merge(
-            products_renamed[['product_id', 'item', 'category', 'product_price']],
-            on='product_id',
-            how='left'
-        )
-        print(f"After joining products: {len(df):,} records")
-
-        unmatched_products = df['category'].isna().sum()
-        if unmatched_products > 0:
-            print(f"  Warning: {unmatched_products:,} records without product data")
-
-        column_order = [
-            'InvoiceID', 'date', 'CustomerID', 'customer_type',
-            'product_id', 'item', 'category',
-            'quantity', 'price', 'product_price', 'line_total'
-        ]
-        df = df[column_order]
-
-        self.cleaning_stats['integration'] = {
-            'initial_records': initial_count,
-            'final_records': len(df),
-            'unmatched_purchases': unmatched_purchases,
-            'unmatched_customers': unmatched_customers,
-            'unmatched_products': unmatched_products
-        }
-
-        print(f"\nIntegrated table created: {len(df):,} records")
-        return df
-
-    def apply_harmful_rules(self, df: pd.DataFrame, remove_harmful: bool = True) -> pd.DataFrame:
-        """Apply harmful outlier detection rules."""
-        print("\n" + "=" * 60)
-        print("APPLYING HARMFUL OUTLIER RULES")
-        print("=" * 60)
-
-        df = df.copy()
-        df['is_harmful'] = False
-        df['harmful_reason'] = ''
-        initial_count = len(df)
-
-        rule1_mask = (df['price'] == 0) | (df['price'] < 0.01)
-        rule1_count = rule1_mask.sum()
-        df.loc[rule1_mask, 'is_harmful'] = True
-        df.loc[rule1_mask, 'harmful_reason'] = 'pricing_error'
-        print(f"Rule 1 (Pricing error): {rule1_count:,} records")
-
-        rule2_mask = (df['customer_type'] == 'private') & (df['quantity'] > 10000)
-        rule2_count = rule2_mask.sum()
-        df.loc[rule2_mask, 'is_harmful'] = True
-        df.loc[rule2_mask, 'harmful_reason'] = 'private_extreme_quantity'
-        print(f"Rule 2 (Private extreme quantity >10,000): {rule2_count:,} records")
-
-        rule3_mask = (df['customer_type'] == 'wholesaler') & (df['quantity'] > 100000)
-        rule3_count = rule3_mask.sum()
-        df.loc[rule3_mask, 'is_harmful'] = True
-        df.loc[rule3_mask, 'harmful_reason'] = 'wholesaler_extreme_quantity'
-        print(f"Rule 3 (Wholesaler extreme quantity >100,000): {rule3_count:,} records")
-
-        calculated_price = df['line_total'] / df['quantity']
-        price_diff_pct = np.abs(calculated_price - df['price']) / df['price'] * 100
-        rule4_mask = price_diff_pct > 5
-        rule4_count = rule4_mask.sum()
-        df.loc[rule4_mask, 'is_harmful'] = True
-        df.loc[rule4_mask, 'harmful_reason'] = 'calculation_error'
-        print(f"Rule 4 (Calculation error >5% tolerance): {rule4_count:,} records")
-
-        rule5_mask = (df['price'] > 1000)
-        rule5_count = rule5_mask.sum()
-        if rule5_count > 0:
-            df.loc[rule5_mask, 'is_harmful'] = True
-            df.loc[rule5_mask, 'harmful_reason'] = 'suspicious_price'
-            print(f"Rule 5 (Suspicious price >1000): {rule5_count:,} records")
-
-        total_harmful = df['is_harmful'].sum()
-        print(f"\nTotal harmful records: {total_harmful:,} ({total_harmful/initial_count*100:.2f}%)")
-
-        if remove_harmful:
-            df_clean = df[~df['is_harmful']].copy()
-            removed = initial_count - len(df_clean)
-            print(f"Removed {removed:,} harmful records")
-            self.cleaning_stats['harmful_removed'] = removed
-            return df_clean.drop(columns=['is_harmful', 'harmful_reason'])
-        else:
-            print("Harmful records flagged but not removed")
-            return df
-
-    def remove_thursday_data(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Remove Thursday data due to data quality issue."""
-        print("\n" + "=" * 60)
-        print("REMOVING THURSDAY DATA (DATA QUALITY ISSUE)")
-        print("=" * 60)
-
-        initial_count = len(df)
-        df = df.copy()
-
-        df['day_of_week'] = df['date'].dt.dayofweek
-        df['day_name'] = df['date'].dt.day_name()
-
-        thursday_mask = df['day_of_week'] == 3
-        thursday_count = thursday_mask.sum()
-
-        print(f"Thursday records: {thursday_count:,} ({thursday_count/initial_count*100:.2f}%)")
-        print(f"Expected if uniform: ~{initial_count/7:,.0f} ({100/7:.1f}%)")
-
-        df_clean = df[~thursday_mask].copy()
-        removed = initial_count - len(df_clean)
-
-        print(f"Removed {removed:,} Thursday records")
-        self.cleaning_stats['thursday_removed'] = removed
-
-        return df_clean.drop(columns=['day_of_week', 'day_name'])
-
-    def add_derived_features(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add temporal and price-related features."""
-        print("\n" + "=" * 60)
-        print("ADDING DERIVED FEATURES")
-        print("=" * 60)
-
-        df = df.copy()
-
-        df['year'] = df['date'].dt.year
-        df['month'] = df['date'].dt.month
-        df['day_of_week'] = df['date'].dt.dayofweek
-        df['day_name'] = df['date'].dt.day_name()
-        df['is_weekend'] = df['day_of_week'].isin([5, 6])
-        df['is_peak_season'] = df['month'].isin([9, 10, 11])
-        df['is_off_season'] = df['month'].isin([1, 2])
-        df['quarter'] = df['date'].dt.quarter
-
-        df['price_vs_product_price'] = df['price'] / df['product_price']
-        df['price_discount_pct'] = (1 - df['price_vs_product_price']) * 100
-        df['revenue'] = df['line_total']
-        df['calculated_line_total'] = df['quantity'] * df['price']
-        df['line_total_error'] = np.abs(df['line_total'] - df['calculated_line_total'])
-
-        print("Added temporal features: year, month, day_of_week, is_weekend, is_peak_season")
-        print("Added price features: price_vs_product_price, price_discount_pct")
-        print("Added revenue and calculation verification features")
-
-        return df
-
-    def get_cleaning_summary(self) -> Dict:
-        return self.cleaning_stats
-
-    def print_cleaning_summary(self):
-        print("\n" + "=" * 60)
-        print("CLEANING SUMMARY")
-        print("=" * 60)
-
-        if 'duplicates_removed' in self.cleaning_stats:
-            dup = self.cleaning_stats['duplicates_removed']
-            print(f"\nDuplicates Removed:")
-            print(f"  Invoice Items: {dup['invoice_items']:,}")
-            print(f"  Purchases: {dup['purchases']:,}")
-
-        if 'integration' in self.cleaning_stats:
-            integ = self.cleaning_stats['integration']
-            print(f"\nIntegration:")
-            print(f"  Initial records: {integ['initial_records']:,}")
-            print(f"  Final records: {integ['final_records']:,}")
-            print(f"  Unmatched records: {integ['unmatched_purchases'] + integ['unmatched_customers'] + integ['unmatched_products']:,}")
-
-        if 'harmful_removed' in self.cleaning_stats:
-            print(f"\nHarmful Records Removed: {self.cleaning_stats['harmful_removed']:,}")
-
-        if 'thursday_removed' in self.cleaning_stats:
-            print(f"Thursday Records Removed: {self.cleaning_stats['thursday_removed']:,}")
-
-        print("=" * 60)
+RAW_FILES = {
+    "customers": "customers.csv",
+    "products": "products.csv",
+    "purchases": "purchases.csv",
+    "invoice_items": "invoice_items.csv",
+}
 
 
-def clean_and_integrate_data(customers: pd.DataFrame,
-                              products: pd.DataFrame,
-                              invoice_items: pd.DataFrame,
-                              purchases: pd.DataFrame,
-                              remove_harmful: bool = True,
-                              remove_thursday: bool = True,
-                              add_features: bool = True) -> pd.DataFrame:
-    """Clean and integrate all data."""
-    print("\n" + "=" * 60)
-    print("DATA CLEANING AND INTEGRATION PIPELINE")
-    print("=" * 60)
+def ensure_dir(path: Path):
+    path.mkdir(parents=True, exist_ok=True)
 
-    cleaner = DataCleaner(customers, products, invoice_items, purchases)
 
-    cleaner.remove_duplicates()
-    df = cleaner.create_integrated_table()
-    df = cleaner.apply_harmful_rules(df, remove_harmful=remove_harmful)
+def read_csv(path: Path) -> pd.DataFrame:
+    if not path.exists():
+        raise FileNotFoundError(f"Missing RAW file: {path}")
+    return pd.read_csv(path)
 
-    if remove_thursday:
-        df = cleaner.remove_thursday_data(df)
 
-    if add_features:
-        df = cleaner.add_derived_features(df)
+def clean_customers(df: pd.DataFrame) -> pd.DataFrame:
+    # RAW: CustomerID, customer_type
+    df = df.rename(columns={"CustomerID": "customer_id"})
+    df = df.dropna(subset=["customer_id"])
+    df["customer_id"] = df["customer_id"].astype(str).str.strip()
+    if "customer_type" in df.columns:
+        df["customer_type"] = df["customer_type"].astype(str).str.strip()
+    return df.drop_duplicates()
 
-    cleaner.print_cleaning_summary()
 
-    print(f"\nFinal cleaned dataset: {len(df):,} records with {len(df.columns)} columns")
-    print("=" * 60)
+def clean_products(df: pd.DataFrame) -> pd.DataFrame:
+    # RAW: product_id, item, category, price
+    df = df.copy()
+    df.columns = [c.strip() for c in df.columns]  # keep names, but ensure clean
+    df = df.dropna(subset=["product_id"])
+    df["product_id"] = df["product_id"].astype(str).str.strip()
+
+    if "price" in df.columns:
+        df["price"] = pd.to_numeric(df["price"], errors="coerce")
+        df = df.dropna(subset=["price"])
+        df = df[df["price"] >= 0]
+
+    return df.drop_duplicates()
+
+
+def clean_purchases(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    RAW purchases.csv columns:
+      InvoiceID, date, CustomerID, product_id, quantity
+
+    We normalize purchases into an invoice-level table:
+      invoice_id, purchase_date, customer_id
+
+    We ignore product_id/quantity here because invoice_items.csv is the line-item table.
+    """
+    df = df.rename(columns={
+        "InvoiceID": "invoice_id",
+        "CustomerID": "customer_id",
+        "date": "purchase_date",
+    })
+
+    # Keep only invoice-level columns
+    keep_cols = [c for c in ["invoice_id", "purchase_date", "customer_id"] if c in df.columns]
+    df = df[keep_cols].copy()
+
+    df = df.dropna(subset=["invoice_id", "customer_id"])
+    df["invoice_id"] = df["invoice_id"].astype(str).str.strip()
+    df["customer_id"] = df["customer_id"].astype(str).str.strip()
+
+    if "purchase_date" in df.columns:
+        df["purchase_date"] = pd.to_datetime(df["purchase_date"], errors="coerce")
+        df = df.dropna(subset=["purchase_date"])
+
+    # One row per invoice (invoice header)
+    df = df.drop_duplicates(subset=["invoice_id"])
 
     return df
 
 
-if __name__ == "__main__":
-    from loading import load_data
+def clean_invoice_items(df: pd.DataFrame) -> pd.DataFrame:
+    # RAW: InvoiceID, product_id, quantity, price, line_total
+    df = df.rename(columns={
+        "InvoiceID": "invoice_id",
+        "price": "unit_price",
+    })
 
-    print("Loading data...")
-    customers, products, invoice_items, purchases = load_data(print_report=False)
+    # Mandatory identifiers
+    df = df.dropna(subset=["invoice_id", "product_id"])
+    df["invoice_id"] = df["invoice_id"].astype(str).str.strip()
+    df["product_id"] = df["product_id"].astype(str).str.strip()
 
-    print("\nCleaning and integrating data...")
-    df_clean = clean_and_integrate_data(
-        customers, products, invoice_items, purchases,
-        remove_harmful=True,
-        remove_thursday=True,
-        add_features=True
-    )
+    # Quantity numeric and > 0
+    if "quantity" in df.columns:
+        df["quantity"] = pd.to_numeric(df["quantity"], errors="coerce")
+        df = df.dropna(subset=["quantity"])
+        df = df[df["quantity"] > 0]
 
-    print("\n" + "=" * 60)
-    print("SAMPLE OF CLEANED DATA")
-    print("=" * 60)
-    print(df_clean.head(10))
+    # Unit price numeric and >= 0
+    if "unit_price" in df.columns:
+        df["unit_price"] = pd.to_numeric(df["unit_price"], errors="coerce")
+        df = df.dropna(subset=["unit_price"])
+        df = df[df["unit_price"] >= 0]
 
-    print("\n" + "=" * 60)
-    print("DATA INFO")
-    print("=" * 60)
-    print(df_clean.info())
+    # Line total numeric if present
+    if "line_total" in df.columns:
+        df["line_total"] = pd.to_numeric(df["line_total"], errors="coerce")
+
+    return df.drop_duplicates()
+
+
+def clean_and_write_processed(raw_dir: Path, processed_dir: Path) -> dict:
+    ensure_dir(processed_dir)
+
+    customers = clean_customers(read_csv(raw_dir / RAW_FILES["customers"]))
+    products = clean_products(read_csv(raw_dir / RAW_FILES["products"]))
+    purchases = clean_purchases(read_csv(raw_dir / RAW_FILES["purchases"]))
+    invoice_items = clean_invoice_items(read_csv(raw_dir / RAW_FILES["invoice_items"]))
+
+    paths = {
+        "customers": processed_dir / "customers_clean.csv",
+        "products": processed_dir / "products_clean.csv",
+        "purchases": processed_dir / "purchases_clean.csv",
+        "invoice_items": processed_dir / "invoice_items_clean.csv",
+    }
+
+    customers.to_csv(paths["customers"], index=False)
+    products.to_csv(paths["products"], index=False)
+    purchases.to_csv(paths["purchases"], index=False)
+    invoice_items.to_csv(paths["invoice_items"], index=False)
+
+    return paths
