@@ -81,6 +81,8 @@ This section describes the integrated dataset created after cleaning and feature
 
 ----
 
+## Understanding the Research Questions
+
 Research Question Implementation Mapping
 | Research Question                           | Script                                                                             |
 | ------------------------------------------- | ---------------------------------------------------------------------------------- |
@@ -89,7 +91,6 @@ Research Question Implementation Mapping
 | RQ3 – Strategic value preservation          | `rq3_strategic_value.py`                                                           |
 | RQ4 – Explainability & stability validation | `rq4_explainability_validation.py`                                                 |
 
-## Understanding the Research Questions
 
 For a detailed explanation of the research questions, objectives, and key performance indicators (KPIs), please refer to the file:
 
