@@ -18,12 +18,11 @@ The framework combines:
 - KPI distortion analysis
 - Explainability and stability validation
 
+```text
 Data_Analytics/
-│
 ├── data/
-│   ├── RAW/                # Original CSV files
-│   └── processed/          # Cleaned & feature-engineered data
-│
+│   ├── RAW/                    # Original CSV files
+│   └── processed/              # Cleaned & feature-engineered data
 ├── src/
 │   ├── cleaning.py
 │   ├── loading.py
@@ -34,12 +33,9 @@ Data_Analytics/
 │   ├── rq2_kpi_distortion.py
 │   ├── rq3_strategic_value.py
 │   └── rq4_explainability_validation.py
-│
 ├── db/
-│   └── create_tables.sql   # PostgreSQL schema
-│
-├── tables_figures/         # All generated tables & figures (RQ-wise)
-│
+│   └── create_tables.sql       # PostgreSQL schema
+├── tables_figures/             # All generated tables & figures (RQ-wise)
 ├── requirements.txt
 └── README.md
 
